@@ -4303,8 +4303,8 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="MotorDriver" deviceset="+3V3" device=""/>
 <part name="U7" library="ic-LT" deviceset="LT6108-2" device=""/>
-<part name="C13" library="Passive" deviceset="C" device="1608" value="1n"/>
-<part name="R9" library="Passive" deviceset="R" device="1608" value="1k"/>
+<part name="C13" library="Passive" deviceset="C" device="1608" value="1u"/>
+<part name="R9" library="Passive" deviceset="R" device="1608" value="2.4k"/>
 <part name="R10" library="Passive" deviceset="R" device="1608" value="100k"/>
 <part name="R11" library="Passive" deviceset="R" device="1608" value="3.9k"/>
 <part name="R12" library="ProjectFromKIKS" deviceset="R4-*" device="FC4L" value="2m"/>
