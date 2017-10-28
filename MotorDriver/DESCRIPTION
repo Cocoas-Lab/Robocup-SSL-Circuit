@@ -1,0 +1,17 @@
+<b>Motor Driver</b><br>
+3Poles BLDC Motor Driver for Robocup SSL<br>
+
+<ul>
+<li>Supplies 5[V] for Micro Controller</li>
+<li>Supplies 4-60[V] for Drives Motor</li>
+<li>Encoder</li>
+<li>Hall Sensor</li>
+<li>Low Voltage Protection</li>
+<li>Over Current Protection</li>
+<li>Over Temperature Protection</li>
+<li>Communicate with SPI</li>
+<li>Serial Bootloader</li>
+<li>Unit Test via Serial Port</li>
+</ul>
+
+※FET耐圧が30Vのため変更必要
