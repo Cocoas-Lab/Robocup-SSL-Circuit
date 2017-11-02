@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -4270,23 +4271,23 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <part name="R1" library="Passive" deviceset="R" device="1608" value="130k"/>
 <part name="R2" library="Passive" deviceset="R" device="1608" value="240k"/>
 <part name="R3" library="Passive" deviceset="R" device="1608" value="13k"/>
-<part name="R4" library="Passive" deviceset="R" device="1608" value="10"/>
+<part name="R4" library="Passive" deviceset="R" device="1608" value="100"/>
 <part name="R5" library="Passive" deviceset="R" device="1608" value="10k"/>
 <part name="R6" library="Passive" deviceset="R" device="1608" value="2k"/>
 <part name="R7" library="Passive" deviceset="R" device="1608" value="2.2"/>
 <part name="C2" library="Passive" deviceset="C" device="1608" value="22n"/>
-<part name="C3" library="Passive" deviceset="C" device="1608" value="1u"/>
+<part name="C3" library="Passive" deviceset="C" device="1608" value="0.1u"/>
 <part name="C4" library="Passive" deviceset="C" device="1608" value="10n"/>
-<part name="C6" library="Passive" deviceset="C" device="1608" value="22u"/>
-<part name="C7" library="Passive" deviceset="C" device="1608" value="22u"/>
-<part name="C8" library="Passive" deviceset="C" device="1608" value="10u"/>
+<part name="C6" library="Passive" deviceset="C" device="1608" value="0.22u"/>
+<part name="C7" library="Passive" deviceset="C" device="1608" value="0.22u"/>
+<part name="C8" library="Passive" deviceset="C" device="3216" value="4.7u"/>
 <part name="R8" library="Passive" deviceset="R" device="1608" value="10k"/>
-<part name="C9" library="Passive" deviceset="C" device="2012" value="2.2u"/>
-<part name="C10" library="Passive" deviceset="C" device="2012" value="2.2u"/>
+<part name="C9" library="Passive" deviceset="C" device="2012" value="0.1u"/>
+<part name="C10" library="Passive" deviceset="C" device="2012" value="0.1u"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="Passive" deviceset="F" device="3216" value="10"/>
 <part name="+P2" library="supply1" deviceset="VBAT" device=""/>
-<part name="C5" library="Passive" deviceset="CPOL" device="S-6.3" value="47u"/>
+<part name="C5" library="Passive" deviceset="CPOL" device="S-6.3" value="22u"/>
 <part name="D1" library="Diode" deviceset="ZENER-*" device="DO-214AC" value="SMAJ60"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -4297,16 +4298,16 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <part name="+P4" library="MotorDriver" deviceset="+5V" device=""/>
 <part name="+3V1" library="MotorDriver" deviceset="+3V3" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C11" library="Passive" deviceset="C" device="1608" value="1u"/>
-<part name="C12" library="Passive" deviceset="C" device="1608" value="1u"/>
+<part name="C11" library="Passive" deviceset="C" device="1608" value="0.1u"/>
+<part name="C12" library="Passive" deviceset="C" device="1608" value="0.1u"/>
 <part name="D2" library="Diode" deviceset="SBD-*" device="SOD523"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="MotorDriver" deviceset="+3V3" device=""/>
 <part name="U7" library="ic-LT" deviceset="LT6108-2" device=""/>
-<part name="C13" library="Passive" deviceset="C" device="1608" value="1u"/>
+<part name="C13" library="Passive" deviceset="C" device="1608" value="0.22u"/>
 <part name="R9" library="Passive" deviceset="R" device="1608" value="2.4k"/>
 <part name="R10" library="Passive" deviceset="R" device="1608" value="100k"/>
-<part name="R11" library="Passive" deviceset="R" device="1608" value="3.9k"/>
+<part name="R11" library="Passive" deviceset="R" device="1608" value="4.7k"/>
 <part name="R12" library="ProjectFromKIKS" deviceset="R4-*" device="FC4L" value="2m"/>
 <part name="R13" library="Passive" deviceset="R" device="1608" value="22"/>
 <part name="+P5" library="supply1" deviceset="VBAT" device=""/>
@@ -4362,13 +4363,13 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <part name="D6" library="Diode" deviceset="DIODE-*" device="SMPC" value="AS4PG"/>
 <part name="+3V4" library="MotorDriver" deviceset="+3V3" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="C17" library="Passive" deviceset="C" device="1608"/>
+<part name="C17" library="Passive" deviceset="C" device="1608" value="0.1u"/>
 <part name="U10" library="Opamp" deviceset="SINGLE-OPAMP-ISO" device="-SOT23" value="AD8601"/>
-<part name="R29" library="Passive" deviceset="R" device="1608" value="10k"/>
-<part name="R30" library="Passive" deviceset="R" device="1608" value="1k"/>
+<part name="R29" library="Passive" deviceset="R" device="1608" value="33k"/>
+<part name="R30" library="Passive" deviceset="R" device="1608" value="2.2k"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="D7" library="Diode" deviceset="SBD-*" device="SOD523" value="RB520S"/>
-<part name="R31" library="Passive" deviceset="R" device="1608" value="10k"/>
+<part name="R31" library="Passive" deviceset="R" device="1608" value="33k"/>
 <part name="C18" library="Passive" deviceset="C" device="1608" value="10n"/>
 <part name="R32" library="Passive" deviceset="R" device="1608" value="1k"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
@@ -4410,15 +4411,15 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <part name="+3V8" library="MotorDriver" deviceset="+3V3" device=""/>
 <part name="R44" library="MotorDriver" deviceset="R" device="1608" value="10k"/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
-<part name="R45" library="MotorDriver" deviceset="R" device="1608"/>
-<part name="R46" library="MotorDriver" deviceset="R" device="1608"/>
-<part name="R47" library="MotorDriver" deviceset="R" device="1608"/>
+<part name="R45" library="MotorDriver" deviceset="R" device="1608" value="100"/>
+<part name="R46" library="MotorDriver" deviceset="R" device="1608" value="100"/>
+<part name="R47" library="MotorDriver" deviceset="R" device="1608" value="100"/>
 <part name="LED1" library="MotorDriver" deviceset="LED" device="1608"/>
 <part name="LED2" library="MotorDriver" deviceset="LED" device="1608"/>
 <part name="LED3" library="MotorDriver" deviceset="LED" device="1608"/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="+3V9" library="MotorDriver" deviceset="+3V3" device=""/>
-<part name="D9" library="Diode" deviceset="SBD-*" device="SOD523"/>
+<part name="D9" library="Diode" deviceset="SBD-*" device="SOD523" value="RB520S"/>
 <part name="+3V10" library="MotorDriver" deviceset="+3V3" device=""/>
 <part name="JP3" library="MotorDriver" deviceset="HEADER-1X3" device="ROUND"/>
 <part name="R48" library="MotorDriver" deviceset="R" device="1608" value="100"/>
@@ -4429,6 +4430,10 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="+3V11" library="MotorDriver" deviceset="+3V3" device=""/>
 <part name="D10" library="Diode" deviceset="SBD-*" device="SOD523" value="RB520S"/>
+<part name="R50" library="Passive" deviceset="R" device="1608" value="10k"/>
+<part name="GND39" library="supply1" deviceset="GND" device=""/>
+<part name="C1" library="Passive" deviceset="C" device="1608" value="0.33n"/>
+<part name="GND40" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4446,11 +4451,11 @@ Vin_max=50[V]</text>
 <text x="147.32" y="30.48" size="1.778" layer="91">Resr&gt;2.1[ohm]</text>
 <text x="7.62" y="22.86" size="1.778" layer="91">Vhys=2.6[V]</text>
 <text x="7.62" y="20.32" size="1.778" layer="91">Vth=13.64[V]</text>
-<text x="48.26" y="93.98" size="1.778" layer="91">Fuse切断検出回路</text>
+<text x="48.26" y="96.52" size="1.778" layer="91">Fuse切断検出回路</text>
 <text x="43.18" y="66.04" size="1.778" layer="91">V_=0.6[V]@Vbat=9.6[V]
 V_=1.0[V]@Vbat=16[V]
 V_=3.1[V]@Vbat=50[V]</text>
-<text x="106.68" y="50.8" size="1.778" layer="91">SRN6045TA-470MCT-ND</text>
+<text x="106.68" y="50.8" size="1.778" layer="91">ASPIAIG-S6055-470M-T</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="35.56" y="50.8"/>
@@ -5356,11 +5361,14 @@ V_=3.1[V]@Vbat=50[V]</text>
 <text x="88.9" y="134.62" size="1.27" layer="91">Iout_max=0.73[mA]@I=8[A]</text>
 <text x="88.9" y="137.16" size="1.27" layer="91">Vout_max=2.15[V]@I=8[A]</text>
 <text x="88.9" y="132.08" size="1.27" layer="91">Av=135  ((560+2.4k)/22)</text>
-<text x="177.8" y="0" size="1.27" layer="91">Av=11  (1+10k/1k)</text>
-<text x="139.7" y="7.62" size="1.27" layer="91">Vout=1.464[V]@Vcap=200[V]</text>
-<text x="139.7" y="10.16" size="1.27" layer="91">Vout=1.098[V]@Vcap=150[V]</text>
-<text x="139.7" y="5.08" size="1.27" layer="91">Vout=1.683[V]@Vcap=230[V]</text>
+<text x="177.8" y="0" size="1.27" layer="91">Av=16  (1+33k/2.2k)</text>
+<text x="139.7" y="7.62" size="1.27" layer="91">Vout=2.129[V]@Vcap=200[V]</text>
+<text x="139.7" y="10.16" size="1.27" layer="91">Vout=1.597[V]@Vcap=150[V]</text>
+<text x="139.7" y="5.08" size="1.27" layer="91">Vout=2.448[V]@Vcap=230[V]</text>
 <text x="248.92" y="160.02" size="1.778" layer="91">541-1354-1-ND</text>
+<text x="139.7" y="20.32" size="1.27" layer="91">Vc_max=235[V]</text>
+<text x="-5.08" y="119.38" size="1.27" layer="91">fc=301[Hz]</text>
+<text x="104.14" y="127" size="1.27" layer="91">fc=168.5[kHz]</text>
 </plain>
 <instances>
 <instance part="U3" gate="G$1" x="180.34" y="134.62" rot="MR0"/>
@@ -5402,7 +5410,7 @@ V_=3.1[V]@Vbat=50[V]</text>
 <instance part="R21" gate="G$1" x="88.9" y="127" rot="R90"/>
 <instance part="R22" gate="G$1" x="88.9" y="119.38" rot="R90"/>
 <instance part="GND18" gate="1" x="88.9" y="111.76" rot="MR0"/>
-<instance part="+3V3" gate="G$1" x="33.02" y="124.46" rot="R90"/>
+<instance part="+3V3" gate="G$1" x="43.18" y="127"/>
 <instance part="R23" gate="G$1" x="43.18" y="121.92" rot="R90"/>
 <instance part="U8" gate="G$1" x="33.02" y="45.72"/>
 <instance part="U9" gate="G$1" x="48.26" y="83.82"/>
@@ -5460,6 +5468,10 @@ V_=3.1[V]@Vbat=50[V]</text>
 <instance part="+3V6" gate="G$1" x="187.96" y="30.48"/>
 <instance part="+3V11" gate="G$1" x="111.76" y="142.24"/>
 <instance part="D10" gate="G$1" x="111.76" y="134.62" rot="R90"/>
+<instance part="R50" gate="G$1" x="185.42" y="106.68" rot="R90"/>
+<instance part="GND39" gate="1" x="185.42" y="96.52" rot="MR0"/>
+<instance part="C1" gate="G$1" x="99.06" y="119.38"/>
+<instance part="GND40" gate="1" x="99.06" y="111.76" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -5701,6 +5713,16 @@ V_=3.1[V]@Vbat=50[V]</text>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="198.12" y1="33.02" x2="198.12" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R50" gate="G$1" pin="1"/>
+<pinref part="GND39" gate="1" pin="GND"/>
+<wire x1="185.42" y1="101.6" x2="185.42" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND40" gate="1" pin="GND"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="114.3" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -5777,7 +5799,11 @@ V_=3.1[V]@Vbat=50[V]</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="HO"/>
 <pinref part="U$1" gate="G$1" pin="G"/>
-<wire x1="180.34" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="R50" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="109.22" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
+<junction x="185.42" y="129.54"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -5856,13 +5882,17 @@ V_=3.1[V]@Vbat=50[V]</text>
 <pinref part="U7" gate="G$1" pin="OUTA"/>
 <wire x1="83.82" y1="129.54" x2="88.9" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <junction x="88.9" y="129.54"/>
 <label x="91.44" y="129.54" size="1.778" layer="95"/>
 <pinref part="D10" gate="G$1" pin="A"/>
+<wire x1="99.06" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="129.54" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="129.54" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
 <junction x="111.76" y="129.54"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="124.46" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
+<junction x="99.06" y="129.54"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -5889,7 +5919,6 @@ V_=3.1[V]@Vbat=50[V]</text>
 <segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
