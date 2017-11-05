@@ -3130,20 +3130,6 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <pinref part="U1" gate="G$1" pin="PIO0_2/ADC0_6/SCT1_OUT3"/>
 </segment>
 </net>
-<net name="PWM_CH" class="0">
-<segment>
-<wire x1="10.16" y1="99.06" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
-<label x="-10.16" y="99.06" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PIO0_1/ADC0_7/SCT0_OUT4"/>
-</segment>
-</net>
-<net name="PWM_CL" class="0">
-<segment>
-<wire x1="-10.16" y1="101.6" x2="10.16" y2="101.6" width="0.1524" layer="91"/>
-<label x="-10.16" y="101.6" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PIO0_0/ADC0_10/SCT0_OUT3"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -3300,14 +3286,14 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PIO0_14/ADC1_7/SCT1_OUT5"/>
-<wire x1="60.96" y1="30.48" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
-<label x="60.96" y="17.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <wire x1="203.2" y1="48.26" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
 <label x="195.58" y="48.26" size="1.778" layer="95" rot="MR0"/>
 <pinref part="R27" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PIO0_1/ADC0_7/SCT0_OUT4"/>
+<wire x1="10.16" y1="99.06" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
+<label x="-10.16" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!RST" class="0">
@@ -3455,14 +3441,14 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="SWDIO/PIO0_20/SCT1_OUT6/TMS"/>
-<wire x1="93.98" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
-<label x="96.52" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="137.16" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
 <label x="124.46" y="96.52" size="1.778" layer="95"/>
 <pinref part="CN1" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PIO0_0/ADC0_10/SCT0_OUT3"/>
+<wire x1="10.16" y1="101.6" x2="-10.16" y2="101.6" width="0.1524" layer="91"/>
+<label x="-10.16" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!CS_DEV" class="0">
@@ -3490,6 +3476,20 @@ Source: &lt;a href="http://www.molex.com/webdocs/datasheets/pdf/en-us//053375061
 <pinref part="+P4" gate="1" pin="+5V"/>
 <wire x1="137.16" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="104.14" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PWM_CL" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SWDIO/PIO0_20/SCT1_OUT6/TMS"/>
+<wire x1="93.98" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<label x="96.52" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM_CH" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PIO0_14/ADC1_7/SCT1_OUT5"/>
+<wire x1="60.96" y1="30.48" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+<label x="60.96" y="17.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
