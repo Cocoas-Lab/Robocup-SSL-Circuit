@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.03125" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -142,6 +143,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjNiMmRh" projecturn="a.cGVyc29uYWw6dWUyYjNiMmRhIzIwMTcwOTA2OTEzNjcyMDY" f3durn="urn:adsk.wipprod:dm.lineage:NL9p6KEWQe2PyAL0Qf3N6w" pcbguid="7779ced2-8b7a-48b4-affd-85e2d5a73712" lastpulledtime="" lastsyncedchangeguid="2b793af0-53f1-7097-9492-fba5a53c9ff7"/>
 <plain>
 <wire x1="0" y1="0" x2="50" y2="0" width="0" layer="20"/>
 <wire x1="50" y1="0" x2="50" y2="50" width="0" layer="20"/>
@@ -182,25 +184,6 @@ GND</text>
 <hole x="16.8275" y="13.97" drill="3.2"/>
 </plain>
 <libraries>
-<library name="Passive">
-<description>Register, Capacitor, Inductor</description>
-<packages>
-<package name="1608">
-<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
-<smd name="1" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
-<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
-<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="0.4" layer="51"/>
-<rectangle x1="0.4" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
-<rectangle x1="-0.4" y1="0.25" x2="0.4" y2="0.4" layer="51"/>
-<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="nonolith.lbr">
 <description>Nonolith Labs Eagle Library</description>
 <packages>
@@ -214,50 +197,6 @@ GND</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-</package>
-</packages>
-</library>
-<library name="Opto">
-<packages>
-<package name="1608">
-<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
-<smd name="K" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
-<smd name="A" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
-<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="0.4" layer="51"/>
-<rectangle x1="0.4" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
-<rectangle x1="-0.4" y1="0.25" x2="0.4" y2="0.4" layer="51"/>
-<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
-<wire x1="0.2" y1="0" x2="-0.2" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="0" x2="0" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="0" x2="0" y2="-0.2" width="0.127" layer="21"/>
-<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
-</package>
-<package name="1611">
-<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
-<smd name="K" x="-0.8" y="0" dx="0.7" dy="0.8" layer="1"/>
-<smd name="A" x="0.8" y="0" dx="0.7" dy="0.8" layer="1"/>
-<rectangle x1="-0.8" y1="-0.3" x2="-0.45" y2="0.3" layer="51"/>
-<rectangle x1="0.45" y1="-0.3" x2="0.8" y2="0.3" layer="51"/>
-<rectangle x1="-0.45" y1="-0.3" x2="0.45" y2="-0.15" layer="51"/>
-<wire x1="0.2" y1="0" x2="-0.2" y2="0" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="0" x2="0" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="0" x2="0" y2="-0.2" width="0.127" layer="21"/>
-<polygon width="0" layer="51">
-<vertex x="-0.6" y="0.3"/>
-<vertex x="-0.55" y="0.9"/>
-<vertex x="0.55" y="0.9"/>
-<vertex x="0.6" y="0.3"/>
-</polygon>
-<rectangle x1="-0.45" y1="0.15" x2="0.45" y2="0.3" layer="51"/>
-<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -326,13 +265,142 @@ GND</text>
 </package>
 </packages>
 </library>
-<library name="DRV8320SRTVT">
-<description>&lt;TEXAS INSTRUMENTS - DRV8320SRTVT - MOSFET DRIVER, HALF BRIDGE, WQFN-32&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<library name="con-Molex">
 <packages>
-<package name="QFN50P500X500X80-33N">
-<description>&lt;b&gt;RTV (S-PWQFN-N32)&lt;/b&gt;&lt;br&gt;
-</description>
+<package name="43045-0800">
+<pad name="1" x="-4.5" y="-4.32" drill="1.1" diameter="1.7"/>
+<pad name="2" x="-1.5" y="-4.32" drill="1.1" diameter="1.7"/>
+<wire x1="-8.075" y1="4.6" x2="8.075" y2="4.6" width="0.127" layer="21"/>
+<wire x1="-8.075" y1="-5.31" x2="-8.075" y2="4.6" width="0.127" layer="21"/>
+<wire x1="8.075" y1="4.6" x2="8.075" y2="-5.31" width="0.127" layer="21"/>
+<pad name="3" x="1.5" y="-4.32" drill="1.1" diameter="1.7"/>
+<pad name="4" x="4.5" y="-4.32" drill="1.1" diameter="1.7"/>
+<pad name="5" x="-4.5" y="-7.32" drill="1.1" diameter="1.7"/>
+<pad name="6" x="-1.5" y="-7.32" drill="1.1" diameter="1.7"/>
+<pad name="7" x="1.5" y="-7.32" drill="1.1" diameter="1.7"/>
+<pad name="8" x="4.5" y="-7.32" drill="1.1" diameter="1.7"/>
+<hole x="2.35" y="0" drill="3"/>
+<hole x="-2.35" y="0" drill="3"/>
+<rectangle x1="-4.82" y1="-7.64" x2="-4.18" y2="-5.31" layer="51"/>
+<rectangle x1="-1.82" y1="-7.64" x2="-1.18" y2="-5.31" layer="51"/>
+<rectangle x1="1.18" y1="-7.64" x2="1.82" y2="-5.31" layer="51"/>
+<rectangle x1="4.18" y1="-7.64" x2="4.82" y2="-5.31" layer="51"/>
+<wire x1="-8.075" y1="-5.31" x2="-4.725" y2="-5.31" width="0.127" layer="21"/>
+<wire x1="-4.725" y1="-5.31" x2="-4.275" y2="-5.31" width="0.127" layer="51"/>
+<wire x1="-4.275" y1="-5.31" x2="-1.725" y2="-5.31" width="0.127" layer="21"/>
+<wire x1="-1.725" y1="-5.31" x2="-1.275" y2="-5.31" width="0.127" layer="51"/>
+<wire x1="-1.275" y1="-5.31" x2="1.275" y2="-5.31" width="0.127" layer="21"/>
+<wire x1="1.275" y1="-5.31" x2="1.725" y2="-5.31" width="0.127" layer="51"/>
+<wire x1="4.275" y1="-5.31" x2="4.725" y2="-5.31" width="0.127" layer="51"/>
+<wire x1="1.725" y1="-5.31" x2="4.275" y2="-5.31" width="0.127" layer="21"/>
+<wire x1="4.725" y1="-5.31" x2="8.075" y2="-5.31" width="0.127" layer="21"/>
+<text x="-4" y="3.5" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-4" y="2" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
+<package name="53375-04">
+<wire x1="-6.2" y1="3.4" x2="6.2" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-3.4" x2="6.2" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-3.4" x2="-6.2" y2="3.4" width="0.127" layer="21"/>
+<wire x1="6.2" y1="3.4" x2="6.2" y2="-3.4" width="0.127" layer="21"/>
+<pad name="1" x="3.75" y="0" drill="1" diameter="1.5"/>
+<pad name="2" x="1.25" y="0" drill="1" diameter="1.5"/>
+<pad name="3" x="-1.25" y="0" drill="1" diameter="1.5"/>
+<pad name="4" x="-3.75" y="0" drill="1" diameter="1.5"/>
+<hole x="5.35" y="-2.2" drill="1.2"/>
+<text x="-6" y="5.5" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-6" y="4" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="MotorDriver" urn="urn:adsk.eagle:library:1073580">
+<description>Generated from &lt;b&gt;MotorDriver.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="SOT669" urn="urn:adsk.eagle:footprint:1073596/1" library_version="2">
+<description>&lt;li&gt;&lt;b&gt;SOT669&lt;/b&gt;&lt;hr&gt;
+&lt;ul&gt;&lt;li&gt;Plastic single-ended surface-mounted package (LFPAK; Power-SO8); 4 lead
+&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: MO-235
+&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: ---&lt;/ul&gt;</description>
+<wire x1="-2.5" y1="2" x2="-2" y2="2" width="0.127" layer="51"/>
+<wire x1="-2" y1="2" x2="1.9958" y2="2" width="0.127" layer="51"/>
+<wire x1="1.9958" y1="2" x2="2" y2="2" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2" y1="2.5" x2="1.6" y2="3" width="0.127" layer="51" curve="90"/>
+<wire x1="1.6" y1="3" x2="-1.6" y2="3" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="3" x2="-2" y2="2.5" width="0.127" layer="51" curve="90"/>
+<wire x1="-2" y1="2.5" x2="-2" y2="2" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-0.9464" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.048" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2" x2="-2.5" y2="-1.0475" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.9873" x2="2.5" y2="-0.9459" width="0.127" layer="51"/>
+<wire x1="2" y1="2" x2="2.4958" y2="2" width="0.127" layer="51"/>
+<rectangle x1="-2.175" y1="2.55" x2="-1.575" y2="3.45" layer="31"/>
+<rectangle x1="1.575" y1="2.55" x2="2.175" y2="3.45" layer="31"/>
+<rectangle x1="-0.925" y1="2.55" x2="-0.325" y2="3.45" layer="31"/>
+<rectangle x1="0.325" y1="2.55" x2="0.925" y2="3.45" layer="31"/>
+<rectangle x1="0.435" y1="-3" x2="0.835" y2="-2" layer="51"/>
+<rectangle x1="-0.835" y1="-3" x2="-0.435" y2="-2" layer="51"/>
+<rectangle x1="-2.105" y1="-3" x2="-1.705" y2="-2" layer="51"/>
+<rectangle x1="1.705" y1="-3" x2="2.105" y2="-2" layer="51"/>
+<smd name="1" x="-1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="2" x="-0.636" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="3" x="0.635" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="4" x="1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
+<smd name="MB" x="0" y="1.778" dx="5.08" dy="5.08" layer="1" rot="R90"/>
+<text x="3.5" y="-1" size="1" layer="27" font="vector">&gt;VALUE</text>
+<text x="3.5" y="0.5" size="1" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="53375-0610" urn="urn:adsk.eagle:footprint:1073594/1" library_version="2">
+<description>&lt;b&gt;53375-0610&lt;/b&gt;&lt;br&gt;</description>
+<circle x="6.269" y="0.703" radius="0.09168125" width="0.2" layer="25"/>
+<wire x1="-8.7" y1="0" x2="8.7" y2="0" width="0.2" layer="51"/>
+<wire x1="8.7" y1="-6.8" x2="-8.7" y2="-6.8" width="0.2" layer="51"/>
+<wire x1="-8.7" y1="-6.8" x2="-8.7" y2="0" width="0.2" layer="51"/>
+<wire x1="-8.7" y1="0" x2="-8.7" y2="-6.8" width="0.2" layer="21"/>
+<wire x1="-8.7" y1="-6.8" x2="8.7" y2="-6.8" width="0.2" layer="21"/>
+<wire x1="8.7" y1="-6.8" x2="8.7" y2="0" width="0.2" layer="51"/>
+<wire x1="8.7" y1="0" x2="-8.7" y2="0" width="0.2" layer="21"/>
+<pad name="1" x="6.25" y="-3.4" drill="1.1" diameter="1.7"/>
+<pad name="2" x="3.75" y="-3.4" drill="1.1" diameter="1.7"/>
+<pad name="3" x="1.25" y="-3.4" drill="1.1" diameter="1.7"/>
+<pad name="4" x="-1.25" y="-3.4" drill="1.1" diameter="1.7"/>
+<pad name="5" x="-3.75" y="-3.4" drill="1.1" diameter="1.7"/>
+<pad name="6" x="-6.25" y="-3.4" drill="1.1" diameter="1.7"/>
+<pad name="7" x="7.85" y="-5.6" drill="1.2" diameter="1.2"/>
+<text x="-0.38781875" y="-3.386859375" size="1.27" layer="25" align="center">&gt;NAME</text>
+</package>
+<package name="DO-214AC" urn="urn:adsk.eagle:footprint:1073585/1" library_version="2">
+<wire x1="-2.1209" y1="1.3335" x2="2.1209" y2="1.3335" width="0.127" layer="21"/>
+<wire x1="-2.1209" y1="-1.3335" x2="2.1209" y2="-1.3335" width="0.127" layer="21"/>
+<wire x1="-2.1209" y1="1.3335" x2="-2.1209" y2="1.0025" width="0.127" layer="21"/>
+<wire x1="-2.1209" y1="-1.3335" x2="-2.1209" y2="-1.0025" width="0.127" layer="21"/>
+<wire x1="-2.12" y1="1.0025" x2="-2.12" y2="-1.0025" width="0.127" layer="51"/>
+<wire x1="2.1209" y1="-1.3335" x2="2.1209" y2="-1.0025" width="0.127" layer="21"/>
+<wire x1="2.1209" y1="1.3335" x2="2.1209" y2="1.0025" width="0.127" layer="21"/>
+<wire x1="2.12" y1="-1.0025" x2="2.12" y2="1.0025" width="0.127" layer="51"/>
+<rectangle x1="-2.54" y1="-0.7239" x2="-2.12" y2="0.7239" layer="51"/>
+<rectangle x1="-1.143" y1="-1.3335" x2="-0.762" y2="1.3335" layer="21"/>
+<rectangle x1="2.12" y1="-0.7239" x2="2.54" y2="0.7239" layer="51" rot="R180"/>
+<smd name="A" x="2.3" y="0" dx="1.6" dy="1.6" layer="1" rot="R180"/>
+<smd name="K" x="-2.3" y="0" dx="1.6" dy="1.6" layer="1"/>
+<text x="-0.5" y="0" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-0.5" y="-1" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
+<package name="DRV8320SRTVT" urn="urn:adsk.eagle:footprint:1073582/1" library_version="2">
+<description>&lt;b&gt;RTV (S-PWQFN-N32)&lt;/b&gt;&lt;br&gt;</description>
+<circle x="-2.9" y="2.5" radius="0.125" width="0.25" layer="25"/>
+<wire x1="-3.15" y1="3.15" x2="3.15" y2="3.15" width="0.05" layer="21"/>
+<wire x1="3.15" y1="3.15" x2="3.15" y2="-3.15" width="0.05" layer="21"/>
+<wire x1="3.15" y1="-3.15" x2="-3.15" y2="-3.15" width="0.05" layer="21"/>
+<wire x1="-3.15" y1="-3.15" x2="-3.15" y2="3.15" width="0.05" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-2" y1="2.5" x2="2.5" y2="2.5" width="0.1" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="2" x2="-2.5" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="2" x2="-2" y2="2.5" width="0.1" layer="51"/>
 <smd name="1" x="-2.5" y="1.75" dx="0.8" dy="0.3" layer="1"/>
 <smd name="2" x="-2.5" y="1.25" dx="0.8" dy="0.3" layer="1"/>
 <smd name="3" x="-2.5" y="0.75" dx="0.8" dy="0.3" layer="1"/>
@@ -367,26 +435,25 @@ GND</text>
 <smd name="32" x="-1.75" y="2.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
 <smd name="33" x="0" y="0" dx="3.55" dy="3.55" layer="1" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<wire x1="-3.15" y1="3.15" x2="3.15" y2="3.15" width="0.05" layer="21"/>
-<wire x1="3.15" y1="3.15" x2="3.15" y2="-3.15" width="0.05" layer="21"/>
-<wire x1="3.15" y1="-3.15" x2="-3.15" y2="-3.15" width="0.05" layer="21"/>
-<wire x1="-3.15" y1="-3.15" x2="-3.15" y2="3.15" width="0.05" layer="21"/>
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.1" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.1" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.1" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.1" layer="51"/>
-<wire x1="-2.5" y1="2" x2="-2" y2="2.5" width="0.1" layer="51"/>
-<circle x="-2.9" y="2.5" radius="0.125" width="0.25" layer="25"/>
 </package>
-</packages>
-</library>
-<library name="LPC1549JBD48">
-<description>&lt;NXP - LPC1549JBD48 - 32BIT MCU, CORTEX-M3, 72 MHZ, LQFP-48&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="QFP50P900X900X160-48N">
-<description>&lt;b&gt;SOT313-2 (LQFP48)&lt;/b&gt;&lt;br&gt;
-</description>
+<package name="QFP48" urn="urn:adsk.eagle:footprint:1073592/1" library_version="3">
+<description>&lt;b&gt;SOT313-2 (LQFP48)&lt;/b&gt;&lt;br&gt;</description>
+<circle x="-4.7" y="3.5" radius="0.125" width="0.25" layer="25"/>
+<wire x1="-5.2" y1="5.2" x2="5.2" y2="5.2" width="0.05" layer="21"/>
+<wire x1="5.2" y1="5.2" x2="5.2" y2="-5.2" width="0.05" layer="21"/>
+<wire x1="5.2" y1="-5.2" x2="-5.2" y2="-5.2" width="0.05" layer="21"/>
+<wire x1="-5.2" y1="-5.2" x2="-5.2" y2="5.2" width="0.05" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3" y2="3.5" width="0.1" layer="51"/>
+<wire x1="-3" y1="3.5" x2="3.5" y2="3.5" width="0.1" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3" width="0.1" layer="51"/>
+<wire x1="-3.5" y1="3" x2="-3.5" y2="3.5" width="0.1" layer="51"/>
+<wire x1="-3.5" y1="3" x2="-3" y2="3.5" width="0.1" layer="51"/>
+<wire x1="-3.15" y1="3.15" x2="3.15" y2="3.15" width="0.2" layer="25"/>
+<wire x1="3.15" y1="3.15" x2="3.15" y2="-3.15" width="0.2" layer="25"/>
+<wire x1="3.15" y1="-3.15" x2="-3.15" y2="-3.15" width="0.2" layer="25"/>
+<wire x1="-3.15" y1="-3.15" x2="-3.15" y2="3.15" width="0.2" layer="25"/>
 <smd name="1" x="-4.225" y="2.75" dx="1.45" dy="0.3" layer="1"/>
 <smd name="2" x="-4.225" y="2.25" dx="1.45" dy="0.3" layer="1"/>
 <smd name="3" x="-4.225" y="1.75" dx="1.45" dy="0.3" layer="1"/>
@@ -436,75 +503,67 @@ GND</text>
 <smd name="47" x="-2.25" y="4.225" dx="1.45" dy="0.3" layer="1" rot="R90"/>
 <smd name="48" x="-2.75" y="4.225" dx="1.45" dy="0.3" layer="1" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<wire x1="-5.2" y1="5.2" x2="5.2" y2="5.2" width="0.05" layer="21"/>
-<wire x1="5.2" y1="5.2" x2="5.2" y2="-5.2" width="0.05" layer="21"/>
-<wire x1="5.2" y1="-5.2" x2="-5.2" y2="-5.2" width="0.05" layer="21"/>
-<wire x1="-5.2" y1="-5.2" x2="-5.2" y2="5.2" width="0.05" layer="21"/>
-<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.1" layer="51"/>
-<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.1" layer="51"/>
-<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.1" layer="51"/>
-<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.1" layer="51"/>
-<wire x1="-3.5" y1="3" x2="-3" y2="3.5" width="0.1" layer="51"/>
-<wire x1="-3.15" y1="3.15" x2="3.15" y2="3.15" width="0.2" layer="25"/>
-<wire x1="3.15" y1="3.15" x2="3.15" y2="-3.15" width="0.2" layer="25"/>
-<wire x1="3.15" y1="-3.15" x2="-3.15" y2="-3.15" width="0.2" layer="25"/>
-<wire x1="-3.15" y1="-3.15" x2="-3.15" y2="3.15" width="0.2" layer="25"/>
-<circle x="-4.7" y="3.5" radius="0.125" width="0.25" layer="25"/>
 </package>
-</packages>
-</library>
-<library name="con-Molex">
-<packages>
-<package name="43045-0800">
-<pad name="1" x="-4.5" y="-4.32" drill="1.1" diameter="1.7"/>
-<pad name="2" x="-1.5" y="-4.32" drill="1.1" diameter="1.7"/>
-<wire x1="-8.075" y1="4.6" x2="8.075" y2="4.6" width="0.127" layer="21"/>
-<wire x1="-8.075" y1="-5.31" x2="-8.075" y2="4.6" width="0.127" layer="21"/>
-<wire x1="8.075" y1="4.6" x2="8.075" y2="-5.31" width="0.127" layer="21"/>
-<pad name="3" x="1.5" y="-4.32" drill="1.1" diameter="1.7"/>
-<pad name="4" x="4.5" y="-4.32" drill="1.1" diameter="1.7"/>
-<pad name="5" x="-4.5" y="-7.32" drill="1.1" diameter="1.7"/>
-<pad name="6" x="-1.5" y="-7.32" drill="1.1" diameter="1.7"/>
-<pad name="7" x="1.5" y="-7.32" drill="1.1" diameter="1.7"/>
-<pad name="8" x="4.5" y="-7.32" drill="1.1" diameter="1.7"/>
-<hole x="2.35" y="0" drill="3"/>
-<hole x="-2.35" y="0" drill="3"/>
-<rectangle x1="-4.82" y1="-7.64" x2="-4.18" y2="-5.31" layer="51"/>
-<rectangle x1="-1.82" y1="-7.64" x2="-1.18" y2="-5.31" layer="51"/>
-<rectangle x1="1.18" y1="-7.64" x2="1.82" y2="-5.31" layer="51"/>
-<rectangle x1="4.18" y1="-7.64" x2="4.82" y2="-5.31" layer="51"/>
-<wire x1="-8.075" y1="-5.31" x2="-4.725" y2="-5.31" width="0.127" layer="21"/>
-<wire x1="-4.725" y1="-5.31" x2="-4.275" y2="-5.31" width="0.127" layer="51"/>
-<wire x1="-4.275" y1="-5.31" x2="-1.725" y2="-5.31" width="0.127" layer="21"/>
-<wire x1="-1.725" y1="-5.31" x2="-1.275" y2="-5.31" width="0.127" layer="51"/>
-<wire x1="-1.275" y1="-5.31" x2="1.275" y2="-5.31" width="0.127" layer="21"/>
-<wire x1="1.275" y1="-5.31" x2="1.725" y2="-5.31" width="0.127" layer="51"/>
-<wire x1="4.275" y1="-5.31" x2="4.725" y2="-5.31" width="0.127" layer="51"/>
-<wire x1="1.725" y1="-5.31" x2="4.275" y2="-5.31" width="0.127" layer="21"/>
-<wire x1="4.725" y1="-5.31" x2="8.075" y2="-5.31" width="0.127" layer="21"/>
-<text x="-4" y="3.5" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-4" y="2" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<package name="R1608" urn="urn:adsk.eagle:footprint:1073611/1" library_version="3">
+<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="0.4" layer="51"/>
+<rectangle x1="0.4" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="0.25" x2="0.4" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
+<smd name="1" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 </package>
-<package name="53375-04">
-<wire x1="-6.2" y1="3.4" x2="6.2" y2="3.4" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="-3.4" x2="6.2" y2="-3.4" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="-3.4" x2="-6.2" y2="3.4" width="0.127" layer="21"/>
-<wire x1="6.2" y1="3.4" x2="6.2" y2="-3.4" width="0.127" layer="21"/>
-<pad name="1" x="3.75" y="0" drill="1" diameter="1.5"/>
-<pad name="2" x="1.25" y="0" drill="1" diameter="1.5"/>
-<pad name="3" x="-1.25" y="0" drill="1" diameter="1.5"/>
-<pad name="4" x="-3.75" y="0" drill="1" diameter="1.5"/>
-<hole x="5.35" y="-2.2" drill="1.2"/>
-<text x="-6" y="5.5" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-6" y="4" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<package name="C2012" urn="urn:adsk.eagle:footprint:1073600/1" library_version="3">
+<wire x1="-1.7" y1="0.85" x2="1.7" y2="0.85" width="0.127" layer="21"/>
+<wire x1="1.7" y1="0.85" x2="1.7" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="1.7" y1="-0.85" x2="-1.7" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="-0.85" x2="-1.7" y2="0.85" width="0.127" layer="21"/>
+<rectangle x1="-1" y1="-0.625" x2="-0.75" y2="0.625" layer="51"/>
+<rectangle x1="0.75" y1="-0.625" x2="1" y2="0.625" layer="51"/>
+<rectangle x1="-0.75" y1="0.475" x2="0.75" y2="0.625" layer="51"/>
+<rectangle x1="-0.75" y1="-0.625" x2="0.75" y2="-0.475" layer="51"/>
+<smd name="1" x="-1.125" y="0" dx="0.75" dy="1.25" layer="1"/>
+<smd name="2" x="1.125" y="0" dx="0.75" dy="1.25" layer="1"/>
+<text x="-1.7" y="1" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.7" y="-1.8" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 </package>
-</packages>
-</library>
-<library name="MotorDriver_Rev1">
-<description>Generated from &lt;b&gt;MotorDriver.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="DIODE_SOD523$1">
+<package name="C1608" urn="urn:adsk.eagle:footprint:1073599/1" library_version="3">
+<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="0.4" layer="51"/>
+<rectangle x1="0.4" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="0.25" x2="0.4" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
+<smd name="1" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<smd name="2" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="LED1608" urn="urn:adsk.eagle:footprint:1073605/1" library_version="4">
+<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0" x2="-0.2" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="0.2" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="-0.2" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="0.4" layer="51"/>
+<rectangle x1="0.4" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="0.25" x2="0.4" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
+<smd name="A" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<smd name="K" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="DIODE_SOD523" urn="urn:adsk.eagle:footprint:1073590/1" library_version="2">
 <wire x1="-0.6" y1="0.375" x2="0.6" y2="0.375" width="0.127" layer="51"/>
 <wire x1="-0.6" y1="-0.375" x2="0.6" y2="-0.375" width="0.127" layer="51"/>
 <wire x1="-0.6" y1="0.375" x2="-0.6" y2="-0.375" width="0.127" layer="51"/>
@@ -523,113 +582,36 @@ by exp-lbrs.ulp</description>
 <text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
 <text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 </package>
-<package name="PASSIVE_2012">
-<wire x1="-1.7" y1="0.85" x2="1.7" y2="0.85" width="0.127" layer="21"/>
-<wire x1="1.7" y1="0.85" x2="1.7" y2="-0.85" width="0.127" layer="21"/>
-<wire x1="1.7" y1="-0.85" x2="-1.7" y2="-0.85" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-0.85" x2="-1.7" y2="0.85" width="0.127" layer="21"/>
-<rectangle x1="-1" y1="-0.625" x2="-0.75" y2="0.625" layer="51"/>
-<rectangle x1="0.75" y1="-0.625" x2="1" y2="0.625" layer="51"/>
-<rectangle x1="-0.75" y1="0.475" x2="0.75" y2="0.625" layer="51"/>
-<rectangle x1="-0.75" y1="-0.625" x2="0.75" y2="-0.475" layer="51"/>
-<smd name="1" x="-1.125" y="0" dx="0.75" dy="1.25" layer="1"/>
-<smd name="2" x="1.125" y="0" dx="0.75" dy="1.25" layer="1"/>
-<text x="-1.7" y="1" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-1.7" y="-1.8" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
-</package>
-<package name="PASSIVE_1608">
-<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
-<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="0.4" layer="51"/>
-<rectangle x1="0.4" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
-<rectangle x1="-0.4" y1="0.25" x2="0.4" y2="0.4" layer="51"/>
-<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
-<smd name="1" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
-<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
-</package>
 </packages>
-</library>
-<library name="MotorDriver">
-<description>Generated from &lt;b&gt;MotorDriver.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs.ulp</description>
-<packages>
-<package name="SOT669">
-<description>&lt;li&gt;&lt;b&gt;SOT669&lt;/b&gt;&lt;hr&gt;
-&lt;ul&gt;&lt;li&gt;Plastic single-ended surface-mounted package (LFPAK; Power-SO8); 4 lead
-&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: MO-235
-&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: ---&lt;/ul&gt;</description>
-<wire x1="-2.5" y1="2" x2="-2" y2="2" width="0.127" layer="51"/>
-<wire x1="-2" y1="2" x2="1.9958" y2="2" width="0.127" layer="51"/>
-<wire x1="1.9958" y1="2" x2="2" y2="2" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="2" y1="2" x2="2" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2" y1="2.5" x2="1.6" y2="3" width="0.127" layer="51" curve="90"/>
-<wire x1="1.6" y1="3" x2="-1.6" y2="3" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="3" x2="-2" y2="2.5" width="0.127" layer="51" curve="90"/>
-<wire x1="-2" y1="2.5" x2="-2" y2="2" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-0.9464" x2="2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-1.048" x2="-2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="2" x2="-2.5" y2="-1.0475" width="0.127" layer="51"/>
-<wire x1="2.5" y1="1.9873" x2="2.5" y2="-0.9459" width="0.127" layer="51"/>
-<wire x1="2" y1="2" x2="2.4958" y2="2" width="0.127" layer="51"/>
-<rectangle x1="-2.175" y1="2.55" x2="-1.575" y2="3.45" layer="31"/>
-<rectangle x1="1.575" y1="2.55" x2="2.175" y2="3.45" layer="31"/>
-<rectangle x1="-0.925" y1="2.55" x2="-0.325" y2="3.45" layer="31"/>
-<rectangle x1="0.325" y1="2.55" x2="0.925" y2="3.45" layer="31"/>
-<rectangle x1="0.435" y1="-3" x2="0.835" y2="-2" layer="51"/>
-<rectangle x1="-0.835" y1="-3" x2="-0.435" y2="-2" layer="51"/>
-<rectangle x1="-2.105" y1="-3" x2="-1.705" y2="-2" layer="51"/>
-<rectangle x1="1.705" y1="-3" x2="2.105" y2="-2" layer="51"/>
-<smd name="1" x="-1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
-<smd name="2" x="-0.636" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
-<smd name="3" x="0.635" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
-<smd name="4" x="1.905" y="-2.725" dx="0.7" dy="1.15" layer="1"/>
-<smd name="MB" x="0" y="1.778" dx="5.08" dy="5.08" layer="1" rot="R90"/>
-<text x="3.5" y="-1" size="1" layer="27" font="vector">&gt;VALUE</text>
-<text x="3.5" y="0.5" size="1" layer="25" font="vector">&gt;NAME</text>
-</package>
-<package name="53375-0610_53375-0610">
-<description>&lt;b&gt;53375-0610&lt;/b&gt;&lt;br&gt;</description>
-<circle x="6.269" y="0.703" radius="0.09168125" width="0.2" layer="25"/>
-<wire x1="-8.7" y1="0" x2="8.7" y2="0" width="0.2" layer="51"/>
-<wire x1="8.7" y1="0" x2="8.7" y2="-6.8" width="0.2" layer="51"/>
-<wire x1="8.7" y1="-6.8" x2="-8.7" y2="-6.8" width="0.2" layer="51"/>
-<wire x1="-8.7" y1="-6.8" x2="-8.7" y2="0" width="0.2" layer="51"/>
-<wire x1="-8.7" y1="0" x2="-8.7" y2="-6.8" width="0.2" layer="21"/>
-<wire x1="-8.7" y1="-6.8" x2="8.7" y2="-6.8" width="0.2" layer="21"/>
-<wire x1="8.7" y1="-6.8" x2="8.7" y2="0" width="0.2" layer="51"/>
-<wire x1="8.7" y1="0" x2="-8.7" y2="0" width="0.2" layer="21"/>
-<pad name="1" x="6.25" y="-3.4" drill="1.1" diameter="1.7"/>
-<pad name="2" x="3.75" y="-3.4" drill="1.1" diameter="1.7"/>
-<pad name="3" x="1.25" y="-3.4" drill="1.1" diameter="1.7"/>
-<pad name="4" x="-1.25" y="-3.4" drill="1.1" diameter="1.7"/>
-<pad name="5" x="-3.75" y="-3.4" drill="1.1" diameter="1.7"/>
-<pad name="6" x="-6.25" y="-3.4" drill="1.1" diameter="1.7"/>
-<pad name="7" x="7.85" y="-5.6" drill="1.2" diameter="1.2"/>
-<text x="-0.38781875" y="-3.386859375" size="1.27" layer="25" align="center">&gt;NAME</text>
-</package>
-<package name="DO-214AC">
-<wire x1="-2.1209" y1="1.3335" x2="2.1209" y2="1.3335" width="0.127" layer="21"/>
-<wire x1="-2.1209" y1="-1.3335" x2="2.1209" y2="-1.3335" width="0.127" layer="21"/>
-<wire x1="-2.1209" y1="1.3335" x2="-2.1209" y2="1.0025" width="0.127" layer="21"/>
-<wire x1="-2.1209" y1="-1.3335" x2="-2.1209" y2="-1.0025" width="0.127" layer="21"/>
-<wire x1="-2.12" y1="1.0025" x2="-2.12" y2="-1.0025" width="0.127" layer="51"/>
-<wire x1="2.1209" y1="-1.3335" x2="2.1209" y2="-1.0025" width="0.127" layer="21"/>
-<wire x1="2.1209" y1="1.3335" x2="2.1209" y2="1.0025" width="0.127" layer="21"/>
-<wire x1="2.12" y1="-1.0025" x2="2.12" y2="1.0025" width="0.127" layer="51"/>
-<rectangle x1="-2.54" y1="-0.7239" x2="-2.12" y2="0.7239" layer="51"/>
-<rectangle x1="-1.143" y1="-1.3335" x2="-0.762" y2="1.3335" layer="21"/>
-<rectangle x1="2.12" y1="-0.7239" x2="2.54" y2="0.7239" layer="51" rot="R180"/>
-<smd name="A" x="2.3" y="0" dx="1.6" dy="1.6" layer="1" rot="R180"/>
-<smd name="K" x="-2.3" y="0" dx="1.6" dy="1.6" layer="1"/>
-<text x="-0.5" y="0" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-0.5" y="-1" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-</package>
-</packages>
+<packages3d>
+<package3d name="SOT669" urn="urn:adsk.eagle:package:1073644/1" type="box" library_version="2">
+<description>SOT669
+Plastic single-ended surface-mounted package (LFPAK; Power-SO8); 4 lead
+JEDEC: MO-235
+IEC: ---</description>
+</package3d>
+<package3d name="DO-214AC" urn="urn:adsk.eagle:package:1073636/2" type="model" library_version="4">
+</package3d>
+<package3d name="53375-0610" urn="urn:adsk.eagle:package:1073643/1" type="box" library_version="2">
+<description>53375-0610</description>
+</package3d>
+<package3d name="DRV8320SRTVT" urn="urn:adsk.eagle:package:1073634/2" type="model" library_version="2">
+<description>RTV (S-PWQFN-N32)</description>
+</package3d>
+<package3d name="QFP48" urn="urn:adsk.eagle:package:1073642/2" type="model" library_version="3">
+<description>SOT313-2 (LQFP48)</description>
+</package3d>
+<package3d name="R1608" urn="urn:adsk.eagle:package:1073656/2" type="model" library_version="3">
+</package3d>
+<package3d name="C2012" urn="urn:adsk.eagle:package:1073646/2" type="model" library_version="3">
+</package3d>
+<package3d name="C1608" urn="urn:adsk.eagle:package:1073647/2" type="model" library_version="3">
+</package3d>
+<package3d name="LED1608" urn="urn:adsk.eagle:package:1073651/2" type="model" library_version="4">
+</package3d>
+<package3d name="DIODE_SOD523" urn="urn:adsk.eagle:package:1073641/2" type="model" library_version="4">
+</package3d>
+</packages3d>
 </library>
 <library name="Connector">
 <packages>
@@ -736,10 +718,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -840,71 +822,71 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="3.302" y="40.0685" smashed="yes" rot="MR0">
+<element name="C1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="3.302" y="40.0685" smashed="yes" rot="MR0">
 <attribute name="NAME" x="4.702" y="40.8685" size="0.8" layer="26" font="vector" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="4.702" y="38.4685" size="0.8" layer="28" font="vector" ratio="18" rot="MR0"/>
 </element>
-<element name="C2" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="3.302" y="29.7815" smashed="yes" rot="MR0">
+<element name="C2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="3.302" y="29.7815" smashed="yes" rot="MR0">
 <attribute name="NAME" x="4.702" y="30.5815" size="0.8" layer="26" font="vector" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="4.702" y="28.1815" size="0.8" layer="28" font="vector" ratio="18" rot="MR0"/>
 </element>
-<element name="C22" library="Passive" package="1608" value="0.1u" x="36.83" y="30.7975" smashed="yes">
+<element name="C22" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C1608" package3d_urn="urn:adsk.eagle:package:1073647/2" value="0.1u" x="36.83" y="30.7975" smashed="yes">
 <attribute name="NAME" x="35.43" y="31.5975" size="0.8" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="35.43" y="29.1975" size="0.8" layer="27" font="vector" ratio="18"/>
 </element>
-<element name="C23" library="Passive" package="1608" value="0.1u" x="30.7975" y="25.8445" smashed="yes">
+<element name="C23" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C1608" package3d_urn="urn:adsk.eagle:package:1073647/2" value="0.1u" x="30.7975" y="25.8445" smashed="yes">
 <attribute name="NAME" x="29.3975" y="26.6445" size="0.8" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="29.3975" y="24.2445" size="0.8" layer="27" font="vector" ratio="18"/>
 </element>
-<element name="C24" library="Passive" package="1608" value="0.1u" x="29.972" y="23.5585" smashed="yes" rot="R90">
+<element name="C24" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C1608" package3d_urn="urn:adsk.eagle:package:1073647/2" value="0.1u" x="29.972" y="23.5585" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.172" y="22.1585" size="0.8" layer="25" font="vector" ratio="18" rot="R90"/>
 <attribute name="VALUE" x="31.572" y="22.1585" size="0.8" layer="27" font="vector" ratio="18" rot="R90"/>
 </element>
-<element name="C3" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="3.302" y="19.6215" smashed="yes" rot="MR0">
+<element name="C3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="3.302" y="19.6215" smashed="yes" rot="MR0">
 <attribute name="NAME" x="4.702" y="20.4215" size="0.8" layer="26" font="vector" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="4.702" y="18.0215" size="0.8" layer="28" font="vector" ratio="18" rot="MR0"/>
 </element>
-<element name="C6" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="31.5595" y="41.8465" smashed="yes" rot="MR270">
+<element name="C6" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="31.5595" y="41.8465" smashed="yes" rot="MR270">
 <attribute name="NAME" x="30.7595" y="43.2465" size="0.8" layer="26" font="vector" ratio="18" rot="MR270"/>
 <attribute name="VALUE" x="33.1595" y="43.2465" size="0.8" layer="28" font="vector" ratio="18" rot="MR270"/>
 </element>
-<element name="D1" library="MotorDriver" package="DO-214AC" value="" x="8.636" y="44.323" smashed="yes">
+<element name="D1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:1073636/2" value="" x="8.636" y="44.323" smashed="yes">
 <attribute name="NAME" x="6.104" y="45.72" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="8.136" y="43.323" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="D2" library="MotorDriver" package="DO-214AC" value="" x="17.526" y="44.323" smashed="yes">
+<element name="D2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:1073636/2" value="" x="17.526" y="44.323" smashed="yes">
 <attribute name="NAME" x="14.74" y="45.72" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="17.026" y="43.323" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="D3" library="MotorDriver" package="DO-214AC" value="" x="8.636" y="34.163" smashed="yes">
+<element name="D3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:1073636/2" value="" x="8.636" y="34.163" smashed="yes">
 <attribute name="NAME" x="6.104" y="35.56" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="8.136" y="33.163" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="D4" library="MotorDriver" package="DO-214AC" value="" x="17.526" y="34.163" smashed="yes">
+<element name="D4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:1073636/2" value="" x="17.526" y="34.163" smashed="yes">
 <attribute name="NAME" x="14.74" y="35.56" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="17.026" y="33.163" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="D5" library="MotorDriver" package="DO-214AC" value="" x="8.636" y="24.003" smashed="yes">
+<element name="D5" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:1073636/2" value="" x="8.636" y="24.003" smashed="yes">
 <attribute name="NAME" x="6.104" y="25.4" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="8.136" y="23.003" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="D6" library="MotorDriver" package="DO-214AC" value="" x="17.526" y="24.003" smashed="yes">
+<element name="D6" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DO-214AC" package3d_urn="urn:adsk.eagle:package:1073636/2" value="" x="17.526" y="24.003" smashed="yes">
 <attribute name="NAME" x="14.74" y="25.4" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="17.026" y="23.003" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="LED3" library="Opto" package="1611" value="" x="45.212" y="15.748" smashed="yes" rot="R270">
+<element name="LED3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="LED1608" package3d_urn="urn:adsk.eagle:package:1073651/2" value="" x="45.212" y="15.748" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.012" y="17.148" size="0.8" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="43.612" y="17.148" size="0.8" layer="27" font="vector" ratio="18" rot="R270"/>
 </element>
-<element name="R17" library="Passive" package="1608" value="10k" x="44.704" y="28.448" smashed="yes" rot="MR270">
+<element name="R17" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="44.704" y="28.448" smashed="yes" rot="MR270">
 <attribute name="NAME" x="43.904" y="29.848" size="0.8" layer="26" font="vector" ratio="18" rot="MR270"/>
 <attribute name="VALUE" x="46.304" y="29.848" size="0.8" layer="28" font="vector" ratio="18" rot="MR270"/>
 </element>
-<element name="R23" library="Passive" package="1608" value="10k" x="42.164" y="26.924" smashed="yes" rot="MR270">
+<element name="R23" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="42.164" y="26.924" smashed="yes" rot="MR270">
 <attribute name="NAME" x="41.364" y="28.324" size="0.8" layer="26" font="vector" ratio="18" rot="MR270"/>
 <attribute name="VALUE" x="43.764" y="28.324" size="0.8" layer="28" font="vector" ratio="18" rot="MR270"/>
 </element>
-<element name="R32" library="Passive" package="1608" value="330" x="45.212" y="12.192" smashed="yes" rot="R270">
+<element name="R32" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="330" x="45.212" y="12.192" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.012" y="13.592" size="0.8" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="43.612" y="13.592" size="0.8" layer="27" font="vector" ratio="18" rot="R270"/>
 </element>
@@ -912,47 +894,47 @@ design rules under a new name.</description>
 <attribute name="NAME" x="43.148" y="34.512" size="0.8128" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="38.148" y="34.512" size="1" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="Q1" library="MotorDriver" package="SOT669" value="BUK7Y7R8-80EX" x="8.382" y="40.005" smashed="yes" rot="R90">
-<attribute name="VALUE" x="9.382" y="43.505" size="1" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="3.818" y="41.9175" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="8.382" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="SOT669" package3d_urn="urn:adsk.eagle:package:1073644/1" value="BUK7Y7R8-80EX" x="8.382" y="40.005" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="N-channel 80 V, 7.8 m standard level MOSFET in LFPAK56" x="8.382" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="8.382" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BUK7Y7R8-80EX" x="8.382" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="3.818" y="41.9175" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="9.382" y="43.505" size="1" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="Q2" library="MotorDriver" package="SOT669" value="BUK7Y7R8-80EX" x="17.272" y="40.005" smashed="yes" rot="R90">
-<attribute name="VALUE" x="18.272" y="43.505" size="1" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="12.708" y="41.9175" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="17.272" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="SOT669" package3d_urn="urn:adsk.eagle:package:1073644/1" value="BUK7Y7R8-80EX" x="17.272" y="40.005" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="N-channel 80 V, 7.8 m standard level MOSFET in LFPAK56" x="17.272" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="17.272" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BUK7Y7R8-80EX" x="17.272" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="12.708" y="41.9175" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="18.272" y="43.505" size="1" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="Q3" library="MotorDriver" package="SOT669" value="BUK7Y7R8-80EX" x="8.382" y="29.845" smashed="yes" rot="R90">
-<attribute name="VALUE" x="9.382" y="33.345" size="1" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="3.818" y="31.7575" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="8.382" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="SOT669" package3d_urn="urn:adsk.eagle:package:1073644/1" value="BUK7Y7R8-80EX" x="8.382" y="29.845" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="N-channel 80 V, 7.8 m standard level MOSFET in LFPAK56" x="8.382" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="8.382" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BUK7Y7R8-80EX" x="8.382" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="3.818" y="31.7575" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="9.382" y="33.345" size="1" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="Q4" library="MotorDriver" package="SOT669" value="BUK7Y7R8-80EX" x="17.272" y="29.845" smashed="yes" rot="R90">
-<attribute name="VALUE" x="18.272" y="33.345" size="1" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="12.708" y="31.7575" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="17.272" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="SOT669" package3d_urn="urn:adsk.eagle:package:1073644/1" value="BUK7Y7R8-80EX" x="17.272" y="29.845" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="N-channel 80 V, 7.8 m standard level MOSFET in LFPAK56" x="17.272" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="17.272" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BUK7Y7R8-80EX" x="17.272" y="29.845" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="12.708" y="31.7575" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="18.272" y="33.345" size="1" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="Q5" library="MotorDriver" package="SOT669" value="BUK7Y7R8-80EX" x="8.382" y="19.685" smashed="yes" rot="R90">
-<attribute name="VALUE" x="9.382" y="23.185" size="1" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="3.818" y="21.5975" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="8.382" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q5" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="SOT669" package3d_urn="urn:adsk.eagle:package:1073644/1" value="BUK7Y7R8-80EX" x="8.382" y="19.685" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="N-channel 80 V, 7.8 m standard level MOSFET in LFPAK56" x="8.382" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="8.382" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BUK7Y7R8-80EX" x="8.382" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="3.818" y="21.5975" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="9.382" y="23.185" size="1" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="Q6" library="MotorDriver" package="SOT669" value="BUK7Y7R8-80EX" x="17.272" y="19.685" smashed="yes" rot="R90">
-<attribute name="VALUE" x="18.272" y="23.185" size="1" layer="27" font="vector" rot="R90"/>
-<attribute name="NAME" x="12.708" y="21.5975" size="0.8128" layer="25" font="vector" rot="R90"/>
-<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="17.272" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="Q6" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="SOT669" package3d_urn="urn:adsk.eagle:package:1073644/1" value="BUK7Y7R8-80EX" x="17.272" y="19.685" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="N-channel 80 V, 7.8 m standard level MOSFET in LFPAK56" x="17.272" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia USA Inc." x="17.272" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="BUK7Y7R8-80EX" x="17.272" y="19.685" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="12.708" y="21.5975" size="0.8128" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="18.272" y="23.185" size="1" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="U4" library="ic-AD" package="SC70-3" value="ADR5041" x="45.72" y="18.796" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.752" y="17.756" size="0.8" layer="25" font="vector" ratio="18"/>
@@ -962,11 +944,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="47.2567" y="1.5367" size="0.8128" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="44.958" y="4.699" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R26" library="Passive" package="1608" value="100" x="41.148" y="4.064" smashed="yes" rot="R270">
+<element name="R26" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="100" x="41.148" y="4.064" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.948" y="5.464" size="0.8" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="39.548" y="5.464" size="0.8" layer="27" font="vector" ratio="18" rot="R270"/>
 </element>
-<element name="R27" library="Passive" package="1608" value="100" x="38.608" y="4.064" smashed="yes" rot="R270">
+<element name="R27" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="100" x="38.608" y="4.064" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.408" y="5.464" size="0.8" layer="25" font="vector" ratio="18" rot="R270"/>
 <attribute name="VALUE" x="37.008" y="5.464" size="0.8" layer="27" font="vector" ratio="18" rot="R270"/>
 </element>
@@ -974,65 +956,65 @@ design rules under a new name.</description>
 <attribute name="NAME" x="48.9265" y="9.5105" size="0.8" layer="26" font="vector" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="45.6965" y="10.192" size="0.8" layer="28" font="vector" ratio="18" rot="MR90"/>
 </element>
-<element name="R21" library="Passive" package="1608" value="10k" x="40.386" y="13.97" smashed="yes" rot="MR180">
+<element name="R21" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="40.386" y="13.97" smashed="yes" rot="MR180">
 <attribute name="NAME" x="38.986" y="13.17" size="0.8" layer="26" font="vector" ratio="18" rot="MR180"/>
 <attribute name="VALUE" x="38.986" y="15.57" size="0.8" layer="28" font="vector" ratio="18" rot="MR180"/>
 </element>
-<element name="C19" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="43.307" y="9.144" smashed="yes" rot="MR0">
+<element name="C19" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="43.307" y="9.144" smashed="yes" rot="MR0">
 <attribute name="NAME" x="43.3735" y="10.198" size="0.8" layer="26" font="vector" ratio="18" rot="MR0"/>
 <attribute name="VALUE" x="44.707" y="7.544" size="0.8" layer="28" font="vector" ratio="18" rot="MR0"/>
 </element>
-<element name="C20" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="47.625" y="15.24" smashed="yes" rot="MR180">
+<element name="C20" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="47.625" y="15.24" smashed="yes" rot="MR180">
 <attribute name="NAME" x="46.987" y="17.1705" size="0.8" layer="26" font="vector" ratio="18" rot="MR180"/>
 <attribute name="VALUE" x="46.225" y="16.84" size="0.8" layer="28" font="vector" ratio="18" rot="MR180"/>
 </element>
-<element name="D7" library="MotorDriver_Rev1" package="DIODE_SOD523$1" value="" x="42.672" y="7.112" smashed="yes">
+<element name="D7" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DIODE_SOD523" package3d_urn="urn:adsk.eagle:package:1073641/2" value="" x="42.672" y="7.112" smashed="yes">
 <attribute name="NAME" x="40.6655" y="6.601" size="0.8" layer="25" font="vector" ratio="18" rot="R90"/>
 <attribute name="VALUE" x="41.272" y="5.512" size="0.8" layer="27" font="vector" ratio="18"/>
 </element>
-<element name="U2" library="DRV8320SRTVT" package="QFN50P500X500X80-33N" value="DRV8320SRTVT" x="30.226" y="12.065" smashed="yes" rot="R270">
+<element name="U2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="DRV8320SRTVT" package3d_urn="urn:adsk.eagle:package:1073634/2" value="DRV8320SRTVT" x="30.226" y="12.065" smashed="yes" rot="R270">
 <attribute name="3D_PACKAGE" value="" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="RS_PART_NUMBER" value="" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value="TEXAS INSTRUMENTS - DRV8320SRTVT - MOSFET DRIVER, HALF BRIDGE, WQFN-32" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="HEIGHT" value="0.8mm" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DRV8320SRTVT" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OTHER_PART_NUMBER" value="" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="HEIGHT" value="0.8mm" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SUPPLIER_NAME" value="RS" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DESCRIPTION" value="TEXAS INSTRUMENTS - DRV8320SRTVT - MOSFET DRIVER, HALF BRIDGE, WQFN-32" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="ALLIED_NUMBER" value="" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="33.528" y="8.128" size="0.8128" layer="25" align="center"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="30.226" y="12.065" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C8" library="MotorDriver_Rev1" package="PASSIVE_1608" value="47n" x="33.056" y="16.0675" smashed="yes">
+<element name="C8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C1608" package3d_urn="urn:adsk.eagle:package:1073647/2" value="47n" x="33.056" y="16.0675" smashed="yes">
 <attribute name="NAME" x="34.577" y="14.7085" size="0.8" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="31.656" y="14.4675" size="0.8" layer="27" font="vector" ratio="18"/>
 </element>
-<element name="C9" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="34.3985" y="12.6715" smashed="yes" rot="MR90">
+<element name="C9" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="34.3985" y="12.6715" smashed="yes" rot="MR90">
 <attribute name="NAME" x="35.1985" y="11.2715" size="0.8128" layer="26" font="vector" ratio="18" rot="MR90"/>
 <attribute name="VALUE" x="32.7985" y="11.2715" size="0.8" layer="28" font="vector" ratio="18" rot="MR90"/>
 </element>
-<element name="C10" library="MotorDriver_Rev1" package="PASSIVE_2012" value="1u" x="30.5075" y="17.8085" smashed="yes" rot="R180">
+<element name="C10" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="C2012" package3d_urn="urn:adsk.eagle:package:1073646/2" value="1u" x="30.5075" y="17.8085" smashed="yes" rot="R180">
 <attribute name="NAME" x="29.939" y="16.7545" size="0.8" layer="25" font="vector" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="31.9075" y="19.4085" size="0.8" layer="27" font="vector" ratio="18" rot="R180"/>
 </element>
-<element name="R1" library="Passive" package="1608" value="10k" x="34.937" y="6.767" smashed="yes" rot="MR90">
+<element name="R1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="34.937" y="6.767" smashed="yes" rot="MR90">
 <attribute name="NAME" x="35.737" y="5.367" size="0.8" layer="26" font="vector" ratio="18" rot="MR90"/>
 <attribute name="VALUE" x="33.337" y="5.367" size="0.8" layer="28" font="vector" ratio="18" rot="MR90"/>
 </element>
-<element name="R2" library="Passive" package="1608" value="10k" x="31.786" y="5.402" smashed="yes" rot="MR180">
+<element name="R2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="31.786" y="5.402" smashed="yes" rot="MR180">
 <attribute name="NAME" x="30.386" y="4.602" size="0.8" layer="26" font="vector" ratio="18" rot="MR180"/>
 <attribute name="VALUE" x="30.386" y="7.002" size="0.8" layer="28" font="vector" ratio="18" rot="MR180"/>
 </element>
-<element name="U1" library="LPC1549JBD48" package="QFP50P900X900X160-48N" value="LPC1549JBD48" x="37.846" y="22.225" smashed="yes" rot="R90">
-<attribute name="OTHER_PART_NUMBER" value="" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="QFP48" package3d_urn="urn:adsk.eagle:package:1073642/2" value="LPC1549JBD48" x="37.846" y="22.225" smashed="yes" rot="R90">
 <attribute name="3D_PACKAGE" value="" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="LPC1549JBD48" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SUPPLIER_NAME" value="RS" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="RS_PART_NUMBER" value="" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="NXP - LPC1549JBD48 - 32BIT MCU, CORTEX-M3, 72 MHZ, LQFP-48" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ALLIED_NUMBER" value="" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="NXP" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="NXP - LPC1549JBD48 - 32BIT MCU, CORTEX-M3, 72 MHZ, LQFP-48" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="1.6mm" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="NXP" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="LPC1549JBD48" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="37.084" y="16.256" size="0.8128" layer="25" rot="R180" align="center"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="37.846" y="22.225" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="SW2" library="Switch" package="SKRP" value="" x="46.228" y="32.512" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.228" y="34.512" size="0.8128" layer="25" font="vector" ratio="15" rot="R270"/>
@@ -1042,57 +1024,57 @@ design rules under a new name.</description>
 <attribute name="NAME" x="27.9725" y="7.405" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="17.368" y="7.683" size="1" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="CN1" library="MotorDriver" package="53375-0610_53375-0610" value="53375-0610" x="41.148" y="42.9895" smashed="yes" rot="R180">
-<attribute name="RS_PART_NUMBER" value="7206413" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="CN1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="53375-0610" package3d_urn="urn:adsk.eagle:package:1073643/1" value="53375-0610" x="41.148" y="42.9895" smashed="yes" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ALLIED_NUMBER" value="" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="Molex MINI-LOCK Series, Series Number 53375, 2.5mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 3A" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HEIGHT" value="mm" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUPPLIER_NAME" value="RS" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Molex" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="53375-0610" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OTHER_PART_NUMBER" value="" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="3D_PACKAGE" value="" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="Molex MINI-LOCK Series, Series Number 53375, 2.5mm Pitch 6 Way 1 Row Straight PCB Header, Solder Termination, 3A" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="33.53481875" y="42.185359375" size="0.8128" layer="25" rot="R180" align="center"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="7206413" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="41.148" y="42.9895" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="CN3" library="con-Molex" package="43045-0800" value="" x="8.636" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.7325" y="10.6755" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="12.636" y="3.08" size="1" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="LED2" library="Opto" package="1608" value="" x="46.99" y="26.924" smashed="yes" rot="R180">
+<element name="LED2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="LED1608" package3d_urn="urn:adsk.eagle:package:1073651/2" value="" x="46.99" y="26.924" smashed="yes" rot="R180">
 <attribute name="NAME" x="48.39" y="26.124" size="0.8" layer="25" font="vector" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="48.39" y="28.524" size="0.8" layer="27" font="vector" ratio="18" rot="R180"/>
 </element>
-<element name="LED0" library="Opto" package="1608" value="" x="46.99" y="21.844" smashed="yes" rot="R180">
+<element name="LED0" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="LED1608" package3d_urn="urn:adsk.eagle:package:1073651/2" value="" x="46.99" y="21.844" smashed="yes" rot="R180">
 <attribute name="NAME" x="48.39" y="21.044" size="0.8" layer="25" font="vector" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="48.39" y="23.444" size="0.8" layer="27" font="vector" ratio="18" rot="R180"/>
 </element>
-<element name="LED1" library="Opto" package="1608" value="" x="46.99" y="24.384" smashed="yes" rot="R180">
+<element name="LED1" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="LED1608" package3d_urn="urn:adsk.eagle:package:1073651/2" value="" x="46.99" y="24.384" smashed="yes" rot="R180">
 <attribute name="NAME" x="48.39" y="23.584" size="0.8" layer="25" font="vector" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="48.39" y="25.984" size="0.8" layer="27" font="vector" ratio="18" rot="R180"/>
 </element>
-<element name="R4" library="Passive" package="1608" value="330" x="46.99" y="26.416" smashed="yes" rot="MR180">
+<element name="R4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="330" x="46.99" y="26.416" smashed="yes" rot="MR180">
 <attribute name="NAME" x="45.59" y="25.616" size="0.8" layer="26" font="vector" ratio="18" rot="MR180"/>
 <attribute name="VALUE" x="45.59" y="28.016" size="0.8" layer="28" font="vector" ratio="18" rot="MR180"/>
 </element>
-<element name="R5" library="Passive" package="1608" value="330" x="46.99" y="21.336" smashed="yes" rot="MR180">
+<element name="R5" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="330" x="46.99" y="21.336" smashed="yes" rot="MR180">
 <attribute name="NAME" x="45.59" y="20.536" size="0.8" layer="26" font="vector" ratio="18" rot="MR180"/>
 <attribute name="VALUE" x="45.59" y="22.936" size="0.8" layer="28" font="vector" ratio="18" rot="MR180"/>
 </element>
-<element name="R6" library="Passive" package="1608" value="330" x="46.99" y="23.876" smashed="yes" rot="MR180">
+<element name="R6" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="330" x="46.99" y="23.876" smashed="yes" rot="MR180">
 <attribute name="NAME" x="45.59" y="23.076" size="0.8" layer="26" font="vector" ratio="18" rot="MR180"/>
 <attribute name="VALUE" x="45.59" y="25.476" size="0.8" layer="28" font="vector" ratio="18" rot="MR180"/>
 </element>
-<element name="R3" library="Passive" package="1608" value="10k" x="32.7025" y="9.0805" rot="MR270"/>
+<element name="R3" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="32.7025" y="9.0805" rot="MR270"/>
 <element name="CN5" library="Connector" package="T-CON" value="" x="27.94" y="41.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="23.495" y="42.545" size="0.762" layer="25" font="vector" ratio="17" rot="R90"/>
 <attribute name="VALUE" x="24.13" y="35.56" size="0.762" layer="27" font="vector" ratio="17" rot="R90"/>
 </element>
-<element name="R7" library="Passive" package="1608" value="10k" x="13.46875" y="25" rot="MR90"/>
-<element name="R8" library="Passive" package="1608" value="10k" x="18.4375" y="20.625" rot="MR90"/>
-<element name="R9" library="Passive" package="1608" value="10k" x="11.25" y="26.53125" rot="MR180"/>
-<element name="R10" library="Passive" package="1608" value="10k" x="18.4375" y="30.625" rot="MR90"/>
-<element name="R11" library="Passive" package="1608" value="10k" x="11.5625" y="36.5625" rot="MR270"/>
-<element name="R12" library="Passive" package="1608" value="10k" x="18.4375" y="40.9375" rot="MR90"/>
+<element name="R7" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="13.46875" y="25" rot="MR90"/>
+<element name="R8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="18.4375" y="20.625" rot="MR90"/>
+<element name="R9" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="11.25" y="26.53125" rot="MR180"/>
+<element name="R10" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="18.4375" y="30.625" rot="MR90"/>
+<element name="R11" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="11.5625" y="36.5625" rot="MR270"/>
+<element name="R12" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="10k" x="18.4375" y="40.9375" rot="MR90"/>
 </elements>
 <signals>
 <signal name="PWM_AH">
@@ -1975,7 +1957,7 @@ design rules under a new name.</description>
 <signal name="N$31">
 <contactref element="LED3" pad="A"/>
 <contactref element="R32" pad="1"/>
-<wire x1="45.212" y1="12.942" x2="45.212" y2="14.948" width="0.254" layer="1"/>
+<wire x1="45.212" y1="12.942" x2="45.212" y2="14.998" width="0.254" layer="1"/>
 </signal>
 <signal name="HALL_U">
 <contactref element="U1" pad="46"/>
@@ -2166,6 +2148,26 @@ design rules under a new name.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
