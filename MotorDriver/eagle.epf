@@ -17,6 +17,7 @@ UsedLibraryUrn="urn:adsk.eagle:library:1217059"
 UsedLibraryUrn="urn:adsk.eagle:library:1217104"
 UsedLibraryUrn="urn:adsk.eagle:library:1218048"
 UsedLibraryUrn="urn:adsk.eagle:library:1340468"
+UsedLibraryUrn="urn:adsk.eagle:library:1437167"
 UsedLibrary="C:/Users/Keita/Documents/eagle/lbr/Connector.lbr"
 UsedLibrary="C:/Users/Keita/Documents/eagle/Robocup-SSL/SSL-Library/Diode.lbr"
 UsedLibrary="C:/Users/Keita/Documents/eagle/Robocup-SSL/KickerBoard/lib/LM5160QPWPRQ1.lbr"
@@ -24,10 +25,10 @@ UsedLibrary="C:/Users/Keita/Documents/eagle/Robocup-SSL/KickerBoard/lib/adcmp350
 
 [Win_1]
 Type="Control Panel"
-Loc="1432 -1260 5271 846"
-State=1
+Loc="112 84 1311 723"
+State=2
 Number=0
 
 [Desktop]
-Screen="5280 2160"
+Screen="1440 900"
 Window="Win_1"

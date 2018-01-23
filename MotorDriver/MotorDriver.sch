@@ -2607,20 +2607,6 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZE.pdf"&gt; Datashee
 <rectangle x1="-0.75" y1="0.475" x2="0.75" y2="0.625" layer="51"/>
 <rectangle x1="-0.75" y1="-0.625" x2="0.75" y2="-0.475" layer="51"/>
 </package>
-<package name="3225" urn="urn:adsk.eagle:footprint:1073316/1" library_version="5">
-<wire x1="2.35" y1="1.45" x2="2.35" y2="-1.45" width="0.127" layer="21"/>
-<wire x1="2.35" y1="-1.45" x2="-2.35" y2="-1.45" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="-1.45" x2="-2.35" y2="1.45" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="1.45" x2="2.35" y2="1.45" width="0.127" layer="21"/>
-<smd name="1" x="-1.625" y="0" dx="1.05" dy="2.5" layer="1"/>
-<smd name="2" x="1.625" y="0" dx="1.05" dy="2.5" layer="1"/>
-<text x="-2.4" y="1.6" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-2.4" y="-2.4" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
-<rectangle x1="-1.7" y1="-1.25" x2="-1.1" y2="1.25" layer="51"/>
-<rectangle x1="1.1" y1="-1.25" x2="1.7" y2="1.25" layer="51"/>
-<rectangle x1="-1.1" y1="1.05" x2="1.1" y2="1.25" layer="51"/>
-<rectangle x1="-1.1" y1="-1.25" x2="1.1" y2="-1.05" layer="51"/>
-</package>
 <package name="E5-10" urn="urn:adsk.eagle:footprint:1073332/1" library_version="5">
 <wire x1="-3.5" y1="1.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-3" y1="2" x2="-3" y2="1" width="0.127" layer="21"/>
@@ -2770,8 +2756,6 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZE.pdf"&gt; Datashee
 </package3d>
 <package3d name="2012" urn="urn:adsk.eagle:package:1073355/1" type="box" library_version="4">
 </package3d>
-<package3d name="3225" urn="urn:adsk.eagle:package:1073357/1" type="box" library_version="5">
-</package3d>
 <package3d name="E5-10" urn="urn:adsk.eagle:package:1073368/1" type="box" library_version="5">
 </package3d>
 <package3d name="E3.5-8" urn="urn:adsk.eagle:package:1073369/1" type="box" library_version="5">
@@ -2802,18 +2786,6 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZE.pdf"&gt; Datashee
 <wire x1="-2.54" y1="-0.762" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-0.762" x2="2.54" y2="0.762" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0.762" x2="-2.54" y2="0.762" width="0.254" layer="94"/>
-</symbol>
-<symbol name="RESETTABLE-FUSE" urn="urn:adsk.eagle:symbol:1073346/1" library_version="5">
-<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<wire x1="-2.54" y1="0.762" x2="-2.54" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-0.762" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.762" x2="2.54" y2="0.762" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0.762" x2="-2.54" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-2.794" y1="-1.778" x2="-1.524" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.524" y1="-1.778" x2="2.794" y2="1.778" width="0.254" layer="94"/>
 </symbol>
 <symbol name="POL-CAPACITOR" urn="urn:adsk.eagle:symbol:1073331/1" library_version="5">
 <wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
@@ -2865,61 +2837,6 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZE.pdf"&gt; Datashee
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:1073355/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RF" urn="urn:adsk.eagle:component:1073391/5" prefix="RF" uservalue="yes" library_version="5">
-<gates>
-<gate name="G$1" symbol="RESETTABLE-FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="2012" package="2012">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:1073355/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1608" package="1608">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:1073354/3"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3216" package="3216">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:1073356/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3225" package="3225">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:1073357/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -3422,13 +3339,113 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZE.pdf"&gt; Datashee
 </deviceset>
 </devicesets>
 </library>
+<library name="TPD4S014DSQR" urn="urn:adsk.eagle:library:1437167">
+<description>&lt;Texas Instruments TPD4S014DSQR, USB Controller, 480Mbit/s, USB 2.0, 10-Pin SON&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SON40P200X200X80-11N" urn="urn:adsk.eagle:footprint:1437169/2" library_version="3">
+<description>&lt;b&gt;DSQ (S-PWSON-N10)&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.05" y="0.8" dx="0.7" dy="0.2" layer="1"/>
+<smd name="2" x="-1.05" y="0.4" dx="0.7" dy="0.2" layer="1"/>
+<smd name="3" x="-1.05" y="0" dx="0.7" dy="0.2" layer="1"/>
+<smd name="4" x="-1.05" y="-0.4" dx="0.7" dy="0.2" layer="1"/>
+<smd name="5" x="-1.05" y="-0.8" dx="0.7" dy="0.2" layer="1"/>
+<smd name="6" x="1.05" y="-0.8" dx="0.7" dy="0.2" layer="1"/>
+<smd name="7" x="1.05" y="-0.4" dx="0.7" dy="0.2" layer="1"/>
+<smd name="8" x="1.05" y="0" dx="0.7" dy="0.2" layer="1"/>
+<smd name="9" x="1.05" y="0.4" dx="0.7" dy="0.2" layer="1"/>
+<smd name="10" x="1.05" y="0.8" dx="0.7" dy="0.2" layer="1"/>
+<smd name="11" x="0" y="0" dx="1.6" dy="1" layer="1" rot="R90"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.625" y1="1.3" x2="1.625" y2="1.3" width="0.05" layer="21"/>
+<wire x1="1.625" y1="1.3" x2="1.625" y2="-1.3" width="0.05" layer="21"/>
+<wire x1="1.625" y1="-1.3" x2="-1.625" y2="-1.3" width="0.05" layer="21"/>
+<wire x1="-1.625" y1="-1.3" x2="-1.625" y2="1.3" width="0.05" layer="21"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.1" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.1" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.1" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.1" layer="51"/>
+<wire x1="-1" y1="0.5" x2="-0.5" y2="1" width="0.1" layer="51"/>
+<circle x="-1.4" y="1.4" radius="0.125" width="0.25" layer="25"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SON40P200X200X80-11N" urn="urn:adsk.eagle:package:1437170/3" type="model" library_version="3">
+<description>DSQ (S-PWSON-N10)
+</description>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="TPD4S014DSQR" urn="urn:adsk.eagle:symbol:1437168/2" library_version="3">
+<wire x1="5.08" y1="2.54" x2="48.26" y2="2.54" width="0.254" layer="94"/>
+<wire x1="48.26" y1="2.54" x2="48.26" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="48.26" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="26.67" y="5.08" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="26.67" y="-17.78" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<pin name="VBUSOUT" x="0" y="-2.54" length="middle" direction="pas"/>
+<pin name="!EN" x="0" y="-5.08" length="middle" direction="pas"/>
+<pin name="!ACK" x="0" y="-7.62" length="middle" direction="pas"/>
+<pin name="ID" x="0" y="-10.16" length="middle" direction="pas"/>
+<pin name="D-" x="0" y="-12.7" length="middle" direction="pas"/>
+<pin name="CENTRAL_PAD_(GND)" x="53.34" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="VBUS" x="53.34" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="GND" x="53.34" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="D+" x="53.34" y="-10.16" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TPD4S014DSQR" urn="urn:adsk.eagle:component:1437171/3" prefix="IC" library_version="3">
+<description>&lt;b&gt;Texas Instruments TPD4S014DSQR, USB Controller, 480Mbit/s, USB 2.0, 10-Pin SON&lt;/b&gt;&lt;p&gt;
+&lt;/b&gt;&lt;br&gt;&lt;a href="&lt;br&gt;&lt;a href="https://componentsearchengine.com/Images/3/TPD4S014DSQR.jpg" title="Image"&gt;
+&lt;img src="https://componentsearchengine.com/Images/3/TPD4S014DSQR.jpg" width="150"&gt;&lt;/a&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/gpn/tpd4s014"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPD4S014DSQR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SON40P200X200X80-11N">
+<connects>
+<connect gate="G$1" pin="!ACK" pad="4"/>
+<connect gate="G$1" pin="!EN" pad="3"/>
+<connect gate="G$1" pin="CENTRAL_PAD_(GND)" pad="11"/>
+<connect gate="G$1" pin="D+" pad="7"/>
+<connect gate="G$1" pin="D-" pad="6"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="ID" pad="5"/>
+<connect gate="G$1" pin="VBUS" pad="9 10"/>
+<connect gate="G$1" pin="VBUSOUT" pad="1 2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:1437170/3"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="3D_PACKAGE" value="" constant="no"/>
+<attribute name="ALLIED_NUMBER" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Texas Instruments TPD4S014DSQR, USB Controller, 480Mbit/s, USB 2.0, 10-Pin SON" constant="no"/>
+<attribute name="HEIGHT" value="0.8mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TPD4S014DSQR" constant="no"/>
+<attribute name="OTHER_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="7422968" constant="no"/>
+<attribute name="SUPPLIER_NAME" value="RS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0">
+<class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
 <parts>
@@ -3558,7 +3575,6 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZE.pdf"&gt; Datashee
 <part name="SW2" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="SKRP" device="" package3d_urn="urn:adsk.eagle:package:1073661/2"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="Passive" library_urn="urn:adsk.eagle:library:1073310" deviceset="F" device="3216" package3d_urn="urn:adsk.eagle:package:1073356/2" value="15"/>
-<part name="RF1" library="Passive" library_urn="urn:adsk.eagle:library:1073310" deviceset="RF" device="1608" package3d_urn="urn:adsk.eagle:package:1073354/3" value="900m"/>
 <part name="C13" library="Passive" library_urn="urn:adsk.eagle:library:1073310" deviceset="CPOL" device="S-10" package3d_urn="urn:adsk.eagle:package:1073378/1" value="100u"/>
 <part name="R8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
 <part name="D13" library="Diode" deviceset="DIODE-*" device="SMPC" value="TSPB20U80S S1G"/>
@@ -3576,6 +3592,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZE.pdf"&gt; Datashee
 <part name="LED4" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="LED" device="1608" package3d_urn="urn:adsk.eagle:package:1073651/2"/>
 <part name="R11" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="330"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="IC3" library="TPD4S014DSQR" library_urn="urn:adsk.eagle:library:1437167" deviceset="TPD4S014DSQR" device="" package3d_urn="urn:adsk.eagle:package:1437170/3"/>
+<part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="R12" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="2.2k"/>
+<part name="R26" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="2.2k"/>
 </parts>
 <sheets>
 <sheet>
@@ -3638,15 +3659,15 @@ LPC1549のｍActive-Highで入力</text>
 <instance part="R5" gate="G$1" x="-152.4" y="76.2" rot="R90"/>
 <instance part="R6" gate="G$1" x="-170.18" y="76.2" rot="R90"/>
 <instance part="CN5" gate="G$1" x="-116.84" y="50.8"/>
-<instance part="J1" gate="G$1" x="-93.98" y="-2.54" rot="MR0"/>
-<instance part="J1" gate="G$2" x="-93.98" y="7.62" rot="MR0"/>
+<instance part="J1" gate="G$1" x="-91.44" y="-73.66" rot="MR0"/>
+<instance part="J1" gate="G$2" x="-91.44" y="-63.5" rot="MR0"/>
 <instance part="IC2" gate="G$1" x="-177.8" y="5.08"/>
 <instance part="GND3" gate="1" x="-180.34" y="-10.16"/>
 <instance part="+3V3" gate="G$1" x="-182.88" y="12.7"/>
-<instance part="GND6" gate="1" x="-86.36" y="-12.7" rot="MR0"/>
+<instance part="GND6" gate="1" x="-83.82" y="-83.82" rot="MR0"/>
 <instance part="GND8" gate="1" x="-147.32" y="-10.16"/>
-<instance part="+P3" gate="1" x="-83.82" y="40.64" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-81.28" y="35.56" size="1.778" layer="96" rot="MR90"/>
+<instance part="+P3" gate="1" x="-15.24" y="-25.4" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-12.7" y="-30.48" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="SUPPLY4" gate="1" x="-78.74" y="99.06"/>
 <instance part="R20" gate="G$1" x="-78.74" y="91.44" rot="R90"/>
@@ -3654,16 +3675,15 @@ LPC1549のｍActive-Highで入力</text>
 <instance part="GND13" gate="1" x="-78.74" y="68.58"/>
 <instance part="C5" gate="G$1" x="-66.04" y="78.74" rot="R180"/>
 <instance part="GND14" gate="1" x="-66.04" y="68.58"/>
-<instance part="D9" gate="G$1" x="-83.82" y="33.02" rot="R270"/>
+<instance part="D9" gate="G$1" x="-15.24" y="-35.56" rot="R270"/>
 <instance part="D7" gate="G$1" x="-170.18" y="60.96"/>
 <instance part="D10" gate="G$1" x="-40.64" y="50.8" rot="R90"/>
 <instance part="C12" gate="G$1" x="-63.5" y="48.26"/>
 <instance part="J2" gate="G$1" x="-124.46" y="12.7"/>
 <instance part="D12" gate="G$1" x="-134.62" y="12.7" rot="R180"/>
 <instance part="F1" gate="G$1" x="-101.6" y="55.88" rot="R180"/>
-<instance part="RF1" gate="G$1" x="-83.82" y="20.32" rot="R90"/>
 <instance part="C13" gate="G$1" x="-50.8" y="48.26"/>
-<instance part="R8" gate="G$1" x="-81.28" y="0" rot="R90"/>
+<instance part="R8" gate="G$1" x="-78.74" y="-71.12" rot="R90"/>
 <instance part="D13" gate="G$1" x="-91.44" y="55.88"/>
 <instance part="U2" gate="P" x="-35.56" y="12.7"/>
 <instance part="U2" gate="A" x="-68.58" y="12.7"/>
@@ -3680,6 +3700,11 @@ LPC1549のｍActive-Highで入力</text>
 <instance part="LED4" gate="G$1" x="-20.32" y="7.62"/>
 <instance part="R11" gate="G$1" x="-20.32" y="0" rot="R90"/>
 <instance part="GND24" gate="1" x="-20.32" y="-10.16"/>
+<instance part="IC3" gate="G$1" x="-20.32" y="-40.64" rot="MR0"/>
+<instance part="GND26" gate="1" x="-106.68" y="-58.42"/>
+<instance part="GND27" gate="1" x="-7.62" y="-68.58"/>
+<instance part="R12" gate="G$1" x="-5.08" y="-35.56" rot="R90"/>
+<instance part="R26" gate="G$1" x="-7.62" y="-58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3764,29 +3789,29 @@ LPC1549のｍActive-Highで入力</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$2" pin="GND"/>
-<wire x1="-87.884" y1="2.54" x2="-86.36" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="2.54" x2="-86.36" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-85.344" y1="-68.58" x2="-83.82" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="-68.58" x2="-83.82" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="S1"/>
-<wire x1="-86.36" y1="-7.62" x2="-86.36" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="-5.08" x2="-91.44" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="-7.62" x2="-86.36" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="-86.36" y="-7.62"/>
+<wire x1="-83.82" y1="-78.74" x2="-83.82" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="-76.2" x2="-88.9" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="-78.74" x2="-83.82" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="-83.82" y="-78.74"/>
 <pinref part="J1" gate="G$1" pin="S2"/>
-<wire x1="-91.44" y1="-7.62" x2="-93.98" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-7.62" x2="-93.98" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="-91.44" y="-7.62"/>
+<wire x1="-88.9" y1="-78.74" x2="-91.44" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-78.74" x2="-91.44" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="-88.9" y="-78.74"/>
 <pinref part="J1" gate="G$1" pin="S3"/>
-<wire x1="-93.98" y1="-7.62" x2="-96.52" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="-7.62" x2="-96.52" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="-93.98" y="-7.62"/>
+<wire x1="-91.44" y1="-78.74" x2="-93.98" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-78.74" x2="-93.98" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="-91.44" y="-78.74"/>
 <pinref part="J1" gate="G$1" pin="S4"/>
-<wire x1="-96.52" y1="-7.62" x2="-99.06" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-7.62" x2="-99.06" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="-96.52" y="-7.62"/>
+<wire x1="-93.98" y1="-78.74" x2="-96.52" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="-78.74" x2="-96.52" y2="-76.2" width="0.1524" layer="91"/>
+<junction x="-93.98" y="-78.74"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="-5.08" x2="-81.28" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="-7.62" x2="-86.36" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-76.2" x2="-78.74" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-78.74" x2="-83.82" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="RS"/>
@@ -3822,6 +3847,22 @@ LPC1549のｍActive-Highで入力</text>
 <pinref part="GND24" gate="1" pin="GND"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="-7.62" x2="-20.32" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND26" gate="1" pin="GND"/>
+<wire x1="-106.68" y1="-55.88" x2="-106.68" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="CENTRAL_PAD_(GND)"/>
+<wire x1="-106.68" y1="-40.64" x2="-76.2" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
+<wire x1="-76.2" y1="-40.64" x2="-73.66" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-48.26" x2="-76.2" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-48.26" x2="-76.2" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-40.64"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="-7.62" y1="-63.5" x2="-7.62" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -3905,7 +3946,12 @@ LPC1549のｍActive-Highで入力</text>
 <segment>
 <pinref part="+P3" gate="1" pin="+5V"/>
 <pinref part="D9" gate="G$1" pin="K"/>
-<wire x1="-83.82" y1="37.084" x2="-83.82" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-31.496" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="-30.48" x2="-15.24" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-33.02" x2="-5.08" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-30.48" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-15.24" y="-30.48"/>
 </segment>
 </net>
 <net name="LED0" class="0">
@@ -4037,23 +4083,36 @@ LPC1549のｍActive-Highで入力</text>
 <net name="N$14" class="0">
 <segment>
 <pinref part="J1" gate="G$2" pin="VB"/>
-<wire x1="-87.884" y1="12.7" x2="-83.82" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="RF1" gate="G$1" pin="1"/>
-<wire x1="-83.82" y1="12.7" x2="-83.82" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-85.344" y1="-58.42" x2="-81.28" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VBUS"/>
+<wire x1="-81.28" y1="-58.42" x2="-81.28" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-45.72" x2="-73.66" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
 <pinref part="J1" gate="G$2" pin="D-"/>
-<wire x1="-87.884" y1="10.16" x2="-76.2" y2="10.16" width="0.1524" layer="91"/>
-<label x="-78.74" y="10.16" size="1.778" layer="95"/>
+<wire x1="-85.344" y1="-60.96" x2="-76.2" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-76.2" y="-60.96" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="D-"/>
+<wire x1="-76.2" y1="-60.96" x2="-63.5" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-53.34" x2="-17.78" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-53.34" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-58.42" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-58.42" x2="-76.2" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-60.96"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
 <pinref part="J1" gate="G$2" pin="D+"/>
-<wire x1="-87.884" y1="7.62" x2="-76.2" y2="7.62" width="0.1524" layer="91"/>
-<label x="-78.74" y="7.62" size="1.778" layer="95"/>
+<wire x1="-85.344" y1="-63.5" x2="-78.74" y2="-63.5" width="0.1524" layer="91"/>
+<label x="-76.2" y="-63.5" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="D+"/>
+<wire x1="-78.74" y1="-63.5" x2="-63.5" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-50.8" x2="-78.74" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-50.8" x2="-78.74" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="-78.74" y="-63.5"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -4096,24 +4155,28 @@ LPC1549のｍActive-Highで入力</text>
 </net>
 <net name="VBUS" class="0">
 <segment>
-<pinref part="RF1" gate="G$1" pin="2"/>
 <pinref part="D9" gate="G$1" pin="A"/>
-<wire x1="-83.82" y1="25.4" x2="-83.82" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="27.94" x2="-83.82" y2="29.464" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="27.94" x2="-71.12" y2="27.94" width="0.1524" layer="91"/>
-<junction x="-83.82" y="27.94"/>
-<label x="-78.74" y="27.94" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-43.18" x2="-15.24" y2="-39.116" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VBUSOUT"/>
+<wire x1="-20.32" y1="-43.18" x2="-15.24" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ID" class="0">
 <segment>
 <pinref part="J1" gate="G$2" pin="ID"/>
-<wire x1="-87.884" y1="5.08" x2="-81.28" y2="5.08" width="0.1524" layer="91"/>
-<label x="-78.74" y="5.08" size="1.778" layer="95"/>
+<wire x1="-85.344" y1="-66.04" x2="-78.74" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-76.2" y="-66.04" size="1.778" layer="95"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-81.28" y1="5.08" x2="-76.2" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="2.54" x2="-81.28" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-81.28" y="5.08"/>
+<wire x1="-78.74" y1="-68.58" x2="-78.74" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="-78.74" y="-66.04"/>
+<wire x1="-78.74" y1="-66.04" x2="-76.2" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="ID"/>
+<wire x1="-76.2" y1="-66.04" x2="-63.5" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-50.8" x2="-15.24" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-50.8" x2="-15.24" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-71.12" x2="-76.2" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-71.12" x2="-76.2" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-66.04"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -4156,6 +4219,22 @@ LPC1549のｍActive-Highで入力</text>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="LED4" gate="G$1" pin="K"/>
 <wire x1="-20.32" y1="2.54" x2="-20.32" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="!EN"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="-45.72" x2="-7.62" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-45.72" x2="-7.62" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="!ACK"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="-48.26" x2="-5.08" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-48.26" x2="-5.08" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -5231,13 +5310,6 @@ DCモータ用にLPCとも結合</text>
 <pinref part="U1" gate="G$1" pin="PIO0_12/DAC_OUT"/>
 <wire x1="53.34" y1="30.48" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 <label x="53.34" y="20.32" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="VBUS" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PIO0_13/ADC1_6"/>
-<wire x1="58.42" y1="30.48" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
-<label x="58.42" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ID" class="0">
