@@ -3550,8 +3550,6 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tpd4s014"&gt; Datasheet &lt;/a&gt;
 <part name="C7" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="1u"/>
 <part name="SUPPLY6" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="V+" device=""/>
 <part name="C8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1005" package3d_urn="urn:adsk.eagle:package:1073645/2" value="1u"/>
-<part name="R19" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
-<part name="R24" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
 <part name="C9" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="C" device="1608" package3d_urn="urn:adsk.eagle:package:1073647/2" value="47n"/>
 <part name="SUPPLY7" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="V+" device=""/>
 <part name="R25" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="100k"/>
@@ -3576,7 +3574,6 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tpd4s014"&gt; Datasheet &lt;/a&gt;
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="Passive" library_urn="urn:adsk.eagle:library:1073310" deviceset="F" device="3216" package3d_urn="urn:adsk.eagle:package:1073356/2" value="15"/>
 <part name="C13" library="Passive" library_urn="urn:adsk.eagle:library:1073310" deviceset="CPOL" device="S-6.3" package3d_urn="urn:adsk.eagle:package:1073376/1" value="22u"/>
-<part name="R8" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="10k"/>
 <part name="D13" library="Diode" deviceset="DIODE-*" device="SMPC" value="TSPB20U80S S1G"/>
 <part name="U2" library="adcmp350" deviceset="ADCMP350YKSZ" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
@@ -3683,7 +3680,6 @@ LPC1549のｍActive-Highで入力</text>
 <instance part="D12" gate="G$1" x="-134.62" y="12.7" rot="R180"/>
 <instance part="F1" gate="G$1" x="-101.6" y="55.88" rot="R180"/>
 <instance part="C13" gate="G$1" x="-50.8" y="48.26"/>
-<instance part="R8" gate="G$1" x="-78.74" y="-71.12" rot="R90"/>
 <instance part="D13" gate="G$1" x="-91.44" y="55.88"/>
 <instance part="U2" gate="P" x="-35.56" y="12.7"/>
 <instance part="U2" gate="A" x="-68.58" y="12.7"/>
@@ -3809,9 +3805,6 @@ LPC1549のｍActive-Highで入力</text>
 <wire x1="-93.98" y1="-78.74" x2="-96.52" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="-78.74" x2="-96.52" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="-93.98" y="-78.74"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-78.74" y1="-76.2" x2="-78.74" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="-78.74" x2="-83.82" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="RS"/>
@@ -4164,12 +4157,8 @@ LPC1549のｍActive-Highで入力</text>
 <net name="ID" class="0">
 <segment>
 <pinref part="J1" gate="G$2" pin="ID"/>
-<wire x1="-85.344" y1="-66.04" x2="-78.74" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-85.344" y1="-66.04" x2="-76.2" y2="-66.04" width="0.1524" layer="91"/>
 <label x="-76.2" y="-66.04" size="1.778" layer="95"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-78.74" y1="-68.58" x2="-78.74" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="-78.74" y="-66.04"/>
-<wire x1="-78.74" y1="-66.04" x2="-76.2" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="ID"/>
 <wire x1="-76.2" y1="-66.04" x2="-63.5" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-50.8" x2="-15.24" y2="-50.8" width="0.1524" layer="91"/>
@@ -4299,8 +4288,6 @@ DCモータ用にLPCとも結合</text>
 <instance part="C7" gate="G$1" x="-58.42" y="63.5" rot="R90"/>
 <instance part="SUPPLY6" gate="1" x="-66.04" y="78.74"/>
 <instance part="C8" gate="G$1" x="25.4" y="55.88"/>
-<instance part="R19" gate="G$1" x="40.64" y="55.88" rot="R90"/>
-<instance part="R24" gate="G$1" x="48.26" y="55.88" rot="R90"/>
 <instance part="C9" gate="G$1" x="-50.8" y="71.12"/>
 <instance part="SUPPLY7" gate="1" x="-22.86" y="137.16"/>
 <instance part="R25" gate="G$1" x="-25.4" y="116.84" rot="R270"/>
@@ -4783,14 +4770,8 @@ DCモータ用にLPCとも結合</text>
 <net name="SDO" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SDO"/>
-<wire x1="2.54" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
 <label x="12.7" y="48.26" size="1.778" layer="95"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="48.26" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="50.8" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="45.72" x2="10.16" y2="48.26" width="0.1524" layer="91"/>
-<junction x="10.16" y="48.26"/>
+<wire x1="2.54" y1="48.26" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDI" class="0">
@@ -4824,13 +4805,8 @@ DCモータ用にLPCとも結合</text>
 <net name="!FAULT" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="NFAULT"/>
-<wire x1="-7.62" y1="27.94" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
 <label x="-7.62" y="15.24" size="1.778" layer="95" rot="R90"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="22.86" x2="-7.62" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="50.8" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-7.62" y="22.86"/>
+<wire x1="-7.62" y1="27.94" x2="-7.62" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4888,14 +4864,6 @@ DCモータ用にLPCとも結合</text>
 <wire x1="2.54" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="63.5" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="63.5" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
-<junction x="25.4" y="63.5"/>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="63.5" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<junction x="40.64" y="63.5"/>
 </segment>
 </net>
 <net name="N$18" class="0">
