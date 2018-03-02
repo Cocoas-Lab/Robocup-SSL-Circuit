@@ -6,9 +6,11 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibraryUrn="urn:adsk.eagle:library:1217099"
 UsedLibraryUrn="urn:adsk.eagle:library:1340468"
 UsedLibraryUrn="urn:adsk.eagle:library:1437167"
 UsedLibraryUrn="urn:adsk.eagle:library:1080482"
+UsedLibraryUrn="urn:adsk.eagle:library:1218048"
 UsedLibraryUrn="urn:adsk.eagle:library:1209503"
 UsedLibrary="/Users/Keita/Repositories/Robocup-SSL-Circuit/MotorDriver/MotorDriver.lbr"
 UsedLibrary="lib/LM5160QPWPRQ1.lbr"
@@ -17,14 +19,14 @@ UsedLibrary="lib/UCC27512DRSR.lbr"
 UsedLibrary="lib/ADR130BUJZ-R2.lbr"
 UsedLibrary="lib/adcmp350.lbr"
 UsedLibraryUrn="urn:adsk.eagle:library:2019884"
-UsedLibrary="MIC5219-33YMM.lbr"
+UsedLibrary="MIC5219-3.3YMM.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 1439 899"
+Loc="160 23 1359 662"
 State=2
 Number=0
 
 [Desktop]
-Screen="4000 1440"
+Screen="1440 900"
 Window="Win_1"
