@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3594,6 +3594,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/tpd4s014"&gt; Datasheet &lt;/a&gt;
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="R12" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="2.2k"/>
 <part name="R26" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1005" package3d_urn="urn:adsk.eagle:package:1073655/2" value="2.2k"/>
+<part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3701,6 +3702,7 @@ LPC1549のｍActive-Highで入力</text>
 <instance part="GND27" gate="1" x="-7.62" y="-68.58"/>
 <instance part="R12" gate="G$1" x="-5.08" y="-35.56" rot="R90"/>
 <instance part="R26" gate="G$1" x="-7.62" y="-58.42" rot="R90"/>
+<instance part="+3V12" gate="G$1" x="-5.08" y="-27.94"/>
 </instances>
 <busses>
 </busses>
@@ -3909,6 +3911,11 @@ LPC1549のｍActive-Highで入力</text>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
 <wire x1="-50.8" y1="22.86" x2="-50.8" y2="25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-33.02" x2="-5.08" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="+3V12" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="VREF" class="0">
 <segment>
@@ -3939,12 +3946,7 @@ LPC1549のｍActive-Highで入力</text>
 <segment>
 <pinref part="+P3" gate="1" pin="+5V"/>
 <pinref part="D9" gate="G$1" pin="K"/>
-<wire x1="-15.24" y1="-31.496" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="-30.48" x2="-15.24" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-33.02" x2="-5.08" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-30.48" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="-15.24" y="-30.48"/>
+<wire x1="-15.24" y1="-31.496" x2="-15.24" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED0" class="0">
@@ -4154,20 +4156,6 @@ LPC1549のｍActive-Highで入力</text>
 <wire x1="-20.32" y1="-43.18" x2="-15.24" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ID" class="0">
-<segment>
-<pinref part="J1" gate="G$2" pin="ID"/>
-<wire x1="-85.344" y1="-66.04" x2="-76.2" y2="-66.04" width="0.1524" layer="91"/>
-<label x="-76.2" y="-66.04" size="1.778" layer="95"/>
-<pinref part="IC3" gate="G$1" pin="ID"/>
-<wire x1="-76.2" y1="-66.04" x2="-63.5" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-50.8" x2="-15.24" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-50.8" x2="-15.24" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-71.12" x2="-76.2" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-71.12" x2="-76.2" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="-76.2" y="-66.04"/>
-</segment>
-</net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
@@ -4218,12 +4206,15 @@ LPC1549のｍActive-Highで入力</text>
 <wire x1="-7.62" y1="-45.72" x2="-7.62" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="!USB_ACK" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="!ACK"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="-48.26" x2="-5.08" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="-48.26" x2="-5.08" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-48.26" x2="12.7" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-5.08" y="-48.26"/>
+<label x="2.54" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -5280,18 +5271,18 @@ DCモータ用にLPCとも結合</text>
 <label x="53.34" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="ID" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PIO0_14/ADC1_7/SCT1_OUT5"/>
-<wire x1="60.96" y1="30.48" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
-<label x="60.96" y="20.32" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
 <net name="FUSE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SWDIO/PIO0_20/SCT1_OUT6/TMS"/>
 <wire x1="93.98" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
 <label x="104.14" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="!USB_ACK" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PIO0_14/ADC1_7/SCT1_OUT5"/>
+<wire x1="60.96" y1="30.48" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
+<label x="60.96" y="20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
