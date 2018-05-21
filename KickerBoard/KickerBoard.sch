@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.3">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2400,6 +2400,123 @@ by exp-lbrs.ulp</description>
 <text x="-2.4" y="1.6" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
 <text x="-2.4" y="-2.4" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 </package>
+<package name="MOTORDRIVER_DIODE_1608">
+<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0" x2="-0.2" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="0.2" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="-0.2" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="0.4" layer="51"/>
+<rectangle x1="0.4" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="0.25" x2="0.4" y2="0.4" layer="51"/>
+<rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
+<smd name="A" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<smd name="K" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="MOTORDRIVER_DO-214AC">
+<wire x1="-2.1209" y1="1.3335" x2="2.1209" y2="1.3335" width="0.127" layer="21"/>
+<wire x1="-2.1209" y1="-1.3335" x2="2.1209" y2="-1.3335" width="0.127" layer="21"/>
+<wire x1="-2.1209" y1="1.3335" x2="-2.1209" y2="1.0025" width="0.127" layer="21"/>
+<wire x1="-2.1209" y1="-1.3335" x2="-2.1209" y2="-1.0025" width="0.127" layer="21"/>
+<wire x1="-2.12" y1="1.0025" x2="-2.12" y2="-1.0025" width="0.127" layer="51"/>
+<wire x1="2.1209" y1="-1.3335" x2="2.1209" y2="-1.0025" width="0.127" layer="21"/>
+<wire x1="2.1209" y1="1.3335" x2="2.1209" y2="1.0025" width="0.127" layer="21"/>
+<wire x1="2.12" y1="-1.0025" x2="2.12" y2="1.0025" width="0.127" layer="51"/>
+<rectangle x1="-2.54" y1="-0.7239" x2="-2.12" y2="0.7239" layer="51"/>
+<rectangle x1="-1.143" y1="-1.3335" x2="-0.762" y2="1.3335" layer="21"/>
+<rectangle x1="2.12" y1="-0.7239" x2="2.54" y2="0.7239" layer="51" rot="R180"/>
+<smd name="A" x="2.3" y="0" dx="1.6" dy="1.6" layer="1" rot="R180"/>
+<smd name="K" x="-2.3" y="0" dx="1.6" dy="1.6" layer="1"/>
+<text x="-0.5" y="0" size="1" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-0.5" y="-1" size="1" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
+<package name="MOTORDRIVER_DIODE_SOD123W">
+<wire x1="-1.3" y1="0.85" x2="1.3" y2="0.85" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.85" x2="1.3" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="0.85" x2="-1.3" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.85" x2="-1.3" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.85" x2="1.3" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.3" y1="0.85" x2="1.3" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="0.7" x2="-1.3" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="1.3" y1="-0.7" x2="1.3" y2="0.7" width="0.127" layer="51"/>
+<rectangle x1="-0.9" y1="-0.8" x2="-0.5952" y2="0.8" layer="21"/>
+<rectangle x1="-1.75" y1="-0.45" x2="-1.3" y2="0.45" layer="51"/>
+<rectangle x1="1.3" y1="-0.45" x2="1.75" y2="0.45" layer="51" rot="R180"/>
+<smd name="A" x="1.65" y="0" dx="1.2" dy="1" layer="1"/>
+<smd name="K" x="-1.65" y="0" dx="1.2" dy="1" layer="1"/>
+<text x="-0.4" y="-0.4" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-2" y="-2" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="MOTORDRIVER_DIODE_SOD123">
+<wire x1="-1.3" y1="0.8" x2="1.3" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.8" x2="1.3" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="0.8" x2="-1.3" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.8" x2="-1.3" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.8" x2="1.3" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.3" y1="0.8" x2="1.3" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="0.7" x2="-1.3" y2="-0.7" width="0.127" layer="51"/>
+<wire x1="1.3" y1="-0.7" x2="1.3" y2="0.7" width="0.127" layer="51"/>
+<rectangle x1="-0.9" y1="-0.8" x2="-0.5952" y2="0.8" layer="21"/>
+<rectangle x1="-1.75" y1="-0.45" x2="-1.3" y2="0.45" layer="51"/>
+<rectangle x1="1.3" y1="-0.45" x2="1.75" y2="0.45" layer="51" rot="R180"/>
+<smd name="A" x="1.65" y="0" dx="1.2" dy="1" layer="1"/>
+<smd name="K" x="-1.65" y="0" dx="1.2" dy="1" layer="1"/>
+<text x="-0.4" y="-0.4" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-2" y="-2" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="MOTORDRIVER_DIODE_SOD128">
+<wire x1="-1.9" y1="1.2" x2="1.9" y2="1.2" width="0.127" layer="21"/>
+<wire x1="1.9" y1="1.2" x2="1.9" y2="-1.2" width="0.127" layer="51"/>
+<wire x1="-1.9" y1="-1.2" x2="1.9" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="1.2" x2="-1.9" y2="-1.2" width="0.127" layer="51"/>
+<rectangle x1="-1.4" y1="-1.2" x2="-1.0952" y2="1.2" layer="21"/>
+<rectangle x1="-2.35" y1="-0.875" x2="-1.9" y2="0.875" layer="51"/>
+<rectangle x1="1.9" y1="-0.875" x2="2.35" y2="0.875" layer="51" rot="R180"/>
+<smd name="A" x="2.25" y="0" dx="1.2" dy="2" layer="1"/>
+<smd name="K" x="-2.25" y="0" dx="1.2" dy="2" layer="1"/>
+<text x="-0.9" y="-0.4" size="0.762" layer="25" font="vector" ratio="17">&gt;NAME</text>
+<text x="-2" y="-2.5" size="0.762" layer="27" font="vector" ratio="17">&gt;VALUE</text>
+</package>
+<package name="MOTORDRIVER_DIODE_SOD323">
+<wire x1="-0.85" y1="0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="0.625" x2="-0.85" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="-0.85" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="0.85" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.625" x2="0.85" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="0.5" x2="-0.85" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.85" y1="-0.5" x2="0.85" y2="0.5" width="0.127" layer="51"/>
+<rectangle x1="-0.65" y1="-0.625" x2="-0.35" y2="0.625" layer="21"/>
+<rectangle x1="-1.25" y1="-0.15" x2="-0.85" y2="0.15" layer="51"/>
+<rectangle x1="0.85" y1="-0.15" x2="1.25" y2="0.15" layer="51" rot="R180"/>
+<smd name="A" x="1.25" y="0" dx="0.8" dy="0.6" layer="1"/>
+<smd name="K" x="-1.25" y="0" dx="0.8" dy="0.6" layer="1"/>
+<text x="-1.6" y="-1.6" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-0.2" y="-0.4" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="MOTORDRIVER_DIODE_SOD523">
+<wire x1="-0.6" y1="0.375" x2="0.6" y2="0.375" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.375" x2="0.6" y2="-0.375" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.375" x2="-0.6" y2="-0.375" width="0.127" layer="51"/>
+<wire x1="0.6" y1="0.375" x2="0.6" y2="-0.375" width="0.127" layer="51"/>
+<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0" x2="-0.2" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="0.2" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="-0.2" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.15" x2="-0.6" y2="0.15" layer="51"/>
+<rectangle x1="0.6" y1="-0.15" x2="0.8" y2="0.15" layer="51"/>
+<smd name="A" x="0.75" y="0" dx="0.7" dy="0.6" layer="1"/>
+<smd name="K" x="-0.75" y="0" dx="0.7" dy="0.6" layer="1"/>
+<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="+3V3">
@@ -2480,6 +2597,21 @@ by exp-lbrs.ulp</description>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <text x="1.524" y="2.921" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="1.524" y="-2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="MOTORDRIVER_SCHOTTKY-DIODE">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="0.889" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-0.889" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="K" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="1.905" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-3.429" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2684,6 +2816,76 @@ by exp-lbrs.ulp</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOTORDRIVER_SBD-*" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MOTORDRIVER_SCHOTTKY-DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1608" package="MOTORDRIVER_DIODE_1608">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO-214AC" package="MOTORDRIVER_DO-214AC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SDO123W" package="MOTORDRIVER_DIODE_SOD123W">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD123" package="MOTORDRIVER_DIODE_SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD128" package="MOTORDRIVER_DIODE_SOD128">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD323" package="MOTORDRIVER_DIODE_SOD323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD523" package="MOTORDRIVER_DIODE_SOD523">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5265,10 +5467,10 @@ by exp-lbrs.ulp</description>
 <part name="C9" library="Passive" deviceset="C" device="2012" value="0.1u"/>
 <part name="C10" library="Passive" deviceset="C" device="2012" value="0.1u"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="F1" library="Passive" deviceset="F" device="3216" value="10"/>
+<part name="F1" library="Passive" deviceset="F" device="3216" value="15"/>
 <part name="+P2" library="supply1" deviceset="VBAT" device=""/>
 <part name="C5" library="Passive" deviceset="CPOL" device="S-6.3" value="22u"/>
-<part name="D1" library="Diode" deviceset="ZENER-*" device="DO-214AC" value="SMAJ60"/>
+<part name="D1" library="Diode" deviceset="ZENER-*" device="DO-214AC" value="SMAJ54A"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="MotorDriver" deviceset="+3V3" device=""/>
@@ -5409,7 +5611,6 @@ by exp-lbrs.ulp</description>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="SM03B-ZESS-TB" library_urn="urn:adsk.eagle:library:1340468" deviceset="SM03B-ZESS-TB" device="" package3d_urn="urn:adsk.eagle:package:1340471/3"/>
-<part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="U12" library="MIC5219-3.3YMM" deviceset="MIC5219-3.3YMM" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="D2" library="SDM2U40CSP-7B" library_urn="urn:adsk.eagle:library:1217099" deviceset="SDM2U40CSP-7B" device="" package3d_urn="urn:adsk.eagle:package:1217102/6"/>
@@ -5435,6 +5636,7 @@ by exp-lbrs.ulp</description>
 <part name="R49" library="MotorDriver" deviceset="R" device="1005" value="10k"/>
 <part name="R52" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="2.2"/>
 <part name="R53" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="2.2"/>
+<part name="D12" library="MotorDriver" deviceset="MOTORDRIVER_SBD-*" device="SOD523"/>
 </parts>
 <sheets>
 <sheet>
@@ -5945,8 +6147,7 @@ V_=3.1[V]@Vbat=50[V]</text>
 <instance part="R51" gate="G$1" x="144.78" y="68.58" rot="R90"/>
 <instance part="GND41" gate="1" x="144.78" y="58.42"/>
 <instance part="GND42" gate="1" x="149.86" y="58.42"/>
-<instance part="J1" gate="G$1" x="160.02" y="78.74"/>
-<instance part="GND43" gate="1" x="154.94" y="58.42"/>
+<instance part="J1" gate="G$1" x="160.02" y="81.28"/>
 <instance part="J2" gate="G$1" x="177.8" y="-63.5"/>
 <instance part="J2" gate="G$2" x="177.8" y="-53.34"/>
 <instance part="GND37" gate="1" x="182.88" y="-73.66"/>
@@ -5964,6 +6165,7 @@ V_=3.1[V]@Vbat=50[V]</text>
 <instance part="GND49" gate="1" x="88.9" y="12.7"/>
 <instance part="R48" gate="G$1" x="60.96" y="-15.24" rot="R180"/>
 <instance part="R49" gate="G$1" x="78.74" y="-40.64" rot="R90"/>
+<instance part="D12" gate="G$1" x="157.48" y="86.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6059,12 +6261,6 @@ V_=3.1[V]@Vbat=50[V]</text>
 <wire x1="142.24" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="81.28" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND42" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="160.02" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="73.66" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND43" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="S4"/>
@@ -6200,6 +6396,11 @@ V_=3.1[V]@Vbat=50[V]</text>
 <wire x1="101.6" y1="114.3" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="111.76" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 <junction x="101.6" y="114.3"/>
+</segment>
+<segment>
+<pinref part="D12" gate="G$1" pin="K"/>
+<wire x1="157.48" y1="88.9" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="157.48" y="91.44" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GATE_BUCK_L" class="0">
@@ -6393,22 +6594,6 @@ V_=3.1[V]@Vbat=50[V]</text>
 <wire x1="144.78" y1="73.66" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CANH" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="CANH"/>
-<wire x1="142.24" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
-<label x="152.4" y="78.74" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="CANL" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="CANL"/>
-<wire x1="142.24" y1="76.2" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
-<label x="152.4" y="76.2" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="ID" class="0">
 <segment>
 <pinref part="J2" gate="G$2" pin="ID"/>
@@ -6516,6 +6701,28 @@ V_=3.1[V]@Vbat=50[V]</text>
 <wire x1="78.74" y1="-50.8" x2="83.82" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="CANL"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="142.24" y1="76.2" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="CANH"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="78.74" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="81.28" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="D12" gate="G$1" pin="A"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6534,6 +6741,7 @@ V_=3.1[V]@Vbat=50[V]</text>
 <text x="139.7" y="20.32" size="1.27" layer="91">Vc_max=235[V]</text>
 <text x="-5.08" y="119.38" size="1.27" layer="91">fc=301[Hz]</text>
 <text x="104.14" y="127" size="1.27" layer="91">fc=168.5[kHz]</text>
+<text x="228.6" y="45.72" size="1.778" layer="91">自動放電回路</text>
 </plain>
 <instances>
 <instance part="U3" gate="G$1" x="180.34" y="134.62" rot="MR0"/>
