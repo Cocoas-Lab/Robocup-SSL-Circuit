@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.3">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -641,6 +641,25 @@ by exp-lbrs.ulp</description>
 <rectangle x1="-0.4" y1="-0.4" x2="0.4" y2="-0.25" layer="51"/>
 <smd name="1" x="-0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
 <smd name="2" x="0.75" y="0" dx="0.7" dy="0.8" layer="1"/>
+<text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="MOTORDRIVER_DIODE_SOD523">
+<wire x1="-0.6" y1="0.375" x2="0.6" y2="0.375" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-0.375" x2="0.6" y2="-0.375" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="0.375" x2="-0.6" y2="-0.375" width="0.127" layer="51"/>
+<wire x1="0.6" y1="0.375" x2="0.6" y2="-0.375" width="0.127" layer="51"/>
+<wire x1="1.35" y1="0.6" x2="1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.6" x2="-1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="0.6" x2="1.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.6" x2="-1.35" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0" x2="-0.2" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="0.2" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="0" x2="0" y2="-0.2" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.15" x2="-0.6" y2="0.15" layer="51"/>
+<rectangle x1="0.6" y1="-0.15" x2="0.8" y2="0.15" layer="51"/>
+<smd name="A" x="0.75" y="0" dx="0.7" dy="0.6" layer="1"/>
+<smd name="K" x="-0.75" y="0" dx="0.7" dy="0.6" layer="1"/>
 <text x="-1.4" y="0.8" size="0.8" layer="25" font="vector" ratio="18">&gt;NAME</text>
 <text x="-1.4" y="-1.6" size="0.8" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 </package>
@@ -1568,9 +1587,9 @@ design rules under a new name.</description>
 <element name="R8" library="Passive" package="1608" value="10k" x="56.769" y="10.2235" rot="MR270"/>
 <element name="C9" library="Passive" package="2012" value="0.1u" x="55.245" y="33.655" rot="MR270"/>
 <element name="C10" library="Passive" package="2012" value="0.1u" x="50.8" y="33.655" rot="MR270"/>
-<element name="F1" library="Passive" package="3216" value="10" x="62.23" y="39.751" rot="R270"/>
+<element name="F1" library="Passive" package="3216" value="15" x="62.23" y="39.751" rot="R270"/>
 <element name="C5" library="Passive" package="ES-6.3" value="22u" x="55.88" y="40.64" rot="R180"/>
-<element name="D1" library="Diode" package="DO-214AC" value="SMAJ60" x="58.42" y="33.655" rot="MR270"/>
+<element name="D1" library="Diode" package="DO-214AC" value="SMAJ54A" x="58.42" y="33.655" rot="MR270"/>
 <element name="C12" library="Passive" package="1608" value="0.1u" x="69.85" y="15.875" rot="MR0"/>
 <element name="U7" library="ic-LT" package="MSOP8" value="LT6108-2" x="54.61" y="33.655" rot="R180"/>
 <element name="C13" library="Passive" package="1608" value="0.22u" x="57.15" y="20.32" rot="MR180"/>
@@ -1742,6 +1761,7 @@ design rules under a new name.</description>
 <element name="R49" library="MotorDriver" package="R1005" value="10k" x="60.833" y="5.334" rot="MR90"/>
 <element name="R52" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="2.2" x="50.3555" y="28.2575" rot="R270"/>
 <element name="R53" library="MotorDriver" library_urn="urn:adsk.eagle:library:1073580" package="R1608" package3d_urn="urn:adsk.eagle:package:1073656/2" value="2.2" x="51.308" y="20.7645" rot="MR0"/>
+<element name="D12" library="MotorDriver" package="MOTORDRIVER_DIODE_SOD523" value="" x="72.39" y="10.16" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1904,7 +1924,6 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="2"/>
 <contactref element="R51" pad="1"/>
 <contactref element="IC1" pad="8"/>
-<contactref element="J1" pad="3"/>
 <contactref element="U12" pad="6"/>
 <contactref element="U12" pad="7"/>
 <contactref element="U12" pad="5"/>
@@ -3003,6 +3022,13 @@ design rules under a new name.</description>
 <wire x1="67.75" y1="19.13" x2="67.75" y2="20.59" width="0.254" layer="1"/>
 <wire x1="68.465" y1="18.415" x2="70.64" y2="20.59" width="0.254" layer="1"/>
 <wire x1="70.64" y1="20.59" x2="71.95" y2="20.59" width="0.254" layer="1"/>
+<contactref element="D12" pad="K"/>
+<wire x1="69.3864" y1="12.2053125" x2="69.3864" y2="12.2111" width="0.1524" layer="1"/>
+<wire x1="69.3864" y1="12.2111" x2="69.215" y2="12.3825" width="0.1524" layer="1"/>
+<wire x1="72.39" y1="10.91" x2="70.6817125" y2="10.91" width="0.1524" layer="1"/>
+<wire x1="70.6817125" y1="10.91" x2="69.3864" y2="12.2053125" width="0.1524" layer="1"/>
+<wire x1="69.215" y1="12.3825" x2="69.215" y2="17.665" width="0.1524" layer="1"/>
+<wire x1="69.215" y1="17.665" x2="68.465" y2="18.415" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$70">
 <contactref element="U1" pad="38"/>
@@ -3114,24 +3140,6 @@ design rules under a new name.</description>
 <contactref element="R51" pad="2"/>
 <wire x1="72.94" y1="8.0645" x2="72.94" y2="5.458" width="0.254" layer="16"/>
 <wire x1="72.94" y1="5.458" x2="72.562" y2="5.08" width="0.254" layer="16"/>
-</signal>
-<signal name="CANH">
-<contactref element="IC1" pad="7"/>
-<contactref element="J1" pad="1"/>
-<wire x1="72.562" y1="2.54" x2="71.8185" y2="2.54" width="0.254" layer="16"/>
-<wire x1="71.8185" y1="2.54" x2="70.739" y2="3.6195" width="0.254" layer="16"/>
-<wire x1="70.739" y1="3.6195" x2="70.739" y2="5.969" width="0.254" layer="16"/>
-<via x="70.739" y="5.969" extent="1-16" drill="0.35" shape="octagon"/>
-<wire x1="70.739" y1="5.969" x2="70.739" y2="7.596" width="0.254" layer="1"/>
-<wire x1="70.739" y1="7.596" x2="70.715" y2="7.62" width="0.254" layer="1"/>
-</signal>
-<signal name="CANL">
-<contactref element="IC1" pad="6"/>
-<contactref element="J1" pad="2"/>
-<wire x1="72.562" y1="3.81" x2="71.5645" y2="3.81" width="0.254" layer="16"/>
-<via x="71.5645" y="3.81" extent="1-16" drill="0.35" shape="octagon"/>
-<wire x1="71.5645" y1="3.81" x2="69.215" y2="6.1595" width="0.254" layer="1"/>
-<wire x1="69.215" y1="6.1595" x2="69.215" y2="7.62" width="0.254" layer="1"/>
 </signal>
 <signal name="N$40">
 <contactref element="U12" pad="2"/>
@@ -3320,6 +3328,30 @@ design rules under a new name.</description>
 <via x="50.558" y="20.7645" extent="1-16" drill="0.35" shape="octagon"/>
 <wire x1="50.558" y1="20.7645" x2="50.165" y2="20.3715" width="0.254" layer="1"/>
 <wire x1="50.165" y1="20.3715" x2="50.165" y2="20.26" width="0.254" layer="1"/>
+</signal>
+<signal name="N$55">
+<contactref element="IC1" pad="6"/>
+<contactref element="J1" pad="3"/>
+<wire x1="67.715" y1="7.62" x2="67.715" y2="4.86385" width="0.1524" layer="1"/>
+<wire x1="67.715" y1="4.86385" x2="68.659" y2="3.91985" width="0.1524" layer="1"/>
+<via x="68.659" y="3.91985" extent="1-16" drill="0.35" shape="octagon"/>
+<wire x1="68.659" y1="3.91985" x2="68.76885" y2="3.81" width="0.1524" layer="16"/>
+<wire x1="68.76885" y1="3.81" x2="72.562" y2="3.81" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$57">
+<contactref element="IC1" pad="7"/>
+<contactref element="J1" pad="2"/>
+<wire x1="69.215" y1="7.62" x2="69.215" y2="3.175" width="0.1524" layer="1"/>
+<via x="69.723" y="2.667" extent="1-16" drill="0.35" shape="octagon"/>
+<wire x1="69.723" y1="2.667" x2="69.85" y2="2.54" width="0.1524" layer="16"/>
+<wire x1="69.85" y1="2.54" x2="72.562" y2="2.54" width="0.1524" layer="16"/>
+<wire x1="69.215" y1="3.175" x2="69.723" y2="2.667" width="0.1524" layer="1"/>
+</signal>
+<signal name="N$58">
+<contactref element="J1" pad="1"/>
+<contactref element="D12" pad="A"/>
+<wire x1="72.39" y1="9.41" x2="70.715" y2="7.735" width="0.1524" layer="1"/>
+<wire x1="70.715" y1="7.735" x2="70.715" y2="7.62" width="0.1524" layer="1"/>
 </signal>
 </signals>
 </board>
