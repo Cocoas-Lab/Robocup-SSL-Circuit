@@ -6,9 +6,8 @@
 <li>UVLO Shutdown</li>
 <li>Charge Current : 8[A] max</li>
 <li>Charge Voltage : 180-220[V]</li>
-<li>Communicate with SPI</li>
+<li>Communicate with CAN</li>
 <li>Serial Debug Console</li>
-<li>Charge Voltage : 200-220[V]</li>
 <li>Auto Discharge</li>
-<li>Write Firmware via Serial</li>
+<li>Write Firmware via USB</li>
 </ul>
