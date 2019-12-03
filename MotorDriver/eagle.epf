@@ -21,6 +21,7 @@ UsedLibraryUrn="urn:adsk.eagle:library:1209527"
 UsedLibraryUrn="urn:adsk.eagle:library:4444371"
 UsedLibraryUrn="urn:adsk.eagle:library:4457163"
 UsedLibraryUrn="urn:adsk.eagle:library:4461358"
+UsedLibrary="/mnt/Data/robocup/circuit/SSL-Library/supply1.lbr"
 
 [Win_1]
 Type="Control Panel"

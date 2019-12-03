@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-03-23T06:24:01Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.67,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "KickerBoard"
+        },
+        "Owner": "Keita Sekiguchi <koron0902@gmail.com>",
+        "Size": {
+            "X": 75,
+            "Y": 50
+        }
+    }
+}
